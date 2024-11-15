@@ -1,6 +1,4 @@
 <script>
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
-
     import EventForm from "./event_form.svelte";
 </script>
 
