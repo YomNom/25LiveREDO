@@ -1,0 +1,11 @@
+{
+    "room_id": "CLIFTCT1109",
+    "name": "Clifton Court Hall 1109",
+    "location": "Clifton Court Hall",
+    "category": "Study room",
+    "capacity": 4,
+    "resources": [
+        "Wi-Fi",
+        "Projector"
+    ]
+}

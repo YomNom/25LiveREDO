@@ -1,0 +1,13 @@
+{
+    "room_id": "MANTEI838",
+    "name": "Mantei Center 838 - Conference",
+    "location": "Mantei Center",
+    "category": "Conference Room",
+    "capacity": 18,
+    "resources": [
+        "Computers",
+        "Wi-Fi",
+        "White Board", 
+        "Tables and Chairs"
+    ]
+}

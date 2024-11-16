@@ -1,0 +1,13 @@
+{   
+    "room_id": "60WCHARL220",  
+    "name": "60 West Charlton 220",
+    "location": "60 West Charlton",
+    "category": "Study Room",
+    "capacity": 74,
+    "resources": [
+        "Carpet",
+        "White Board",
+        "TV",
+        "+1"
+    ]
+}

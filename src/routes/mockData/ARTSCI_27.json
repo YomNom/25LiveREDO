@@ -1,0 +1,11 @@
+{
+    "room_id": "ARTSCI 27",
+    "name": "Arts & Sciences Hall 27",
+    "location": "Arts & Sciences Hall",
+    "category": "Meeting Room",
+    "capacity": 5,
+    "resources": [
+        "Piano",
+        "Soundproof Walls"
+    ]
+}

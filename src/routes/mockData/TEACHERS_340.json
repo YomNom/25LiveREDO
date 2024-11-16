@@ -1,0 +1,11 @@
+{
+    "name": "TEACHERS 340",
+    "status": "Unavailable",
+    "location": "Teachers College",
+    "category": "Study Room",
+    "capacity": 10,
+    "resources": [
+        "Wi-Fi",
+        "Power Outlets"
+    ]
+}

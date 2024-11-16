@@ -1,6 +1,10 @@
 <script>
     const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const timeSlots = Array.from({ length: 17 }, (_, i) => `${7 + i}:00`);
+    import roomData from '../routes/mockData/60WCHARL_140.json' ;
+    console.log(roomData);
+
+
 </script>
 
 <style>

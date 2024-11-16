@@ -1,0 +1,11 @@
+{
+    "name": "ZIMMER 414",
+    "status": "Unavailable",
+    "location": "Zimmer Hall",
+    "category": "Study Room",
+    "capacity": 8,
+    "resources": [
+        "White Board",
+        "TV"
+    ]
+}
