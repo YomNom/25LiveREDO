@@ -3,6 +3,7 @@
     
     import EventForm from "./event_form.svelte";
     import DisplayEvents from "./display_events.svelte";
+	import Popup from "./Popup.svelte";
     
     let currentEvents = [
       {
@@ -66,6 +67,7 @@
         endTime: '14:00'
       }
     ];
+    let  showPopup = false;
     </script>
     
     <main>
@@ -78,6 +80,8 @@
       <div class="top-page">
         <EventForm {currentEvents} />
         <DisplayEvents {currentEvents} title="Current Events" />
+        <button on:click={() => showPopup = !showPopup}>Show Popup</button>
+        <Popup {showPopup} message="This is a popup message!" />
       </div>
     </main>
     
@@ -90,6 +94,8 @@
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
         padding-top: 60px; /* Adjust for navbar height */
+        background-color: #afabab;
+
       }
       .navbar {
         width: 100%;
@@ -109,6 +115,5 @@
         width: 100%;
         padding: 10px;
         box-sizing: border-box;
-        background-color: #afabab;
       }
     </style>
