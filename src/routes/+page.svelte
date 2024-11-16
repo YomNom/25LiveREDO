@@ -1,9 +1,11 @@
 <script>
     // @ts-nocheck
-    
     import EventForm from "./event_form.svelte";
     import DisplayEvents from "./display_events.svelte";
-    
+    import Location from "./locations.svelte";
+
+
+
     let currentEvents = [
       {
         name: 'Sample Event 1',
@@ -78,7 +80,16 @@
       <div class="top-page">
         <EventForm {currentEvents} />
         <DisplayEvents {currentEvents} title="Current Events" />
+       
       </div>
+
+       <!-- Bottom Section for Locations -->
+  <div class="bottom-page">
+
+    <Location />
+    </div>
+
+
     </main>
     
     <style>
@@ -111,4 +122,11 @@
         box-sizing: border-box;
         background-color: #afabab;
       }
+
+      .bottom-page {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
     </style>
