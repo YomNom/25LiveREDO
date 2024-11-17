@@ -1,5 +1,6 @@
 <script>
     import { onMount } from "svelte";
+    import DisplayEvents from "./DisplayEvents.svelte";
     export let currentEvents = [];
   
     let event = {
@@ -87,7 +88,9 @@
       {/if}
     </form>
   </div>
-  
+
+  <DisplayEvents {currentEvents} title="Current Events" />
+
   <style>
     .rounded-rectangle {
       background-color: #fff;

@@ -17,8 +17,7 @@
           {/each}
         {/if}
       </ul>
-      <!-- Debugging information -->
-      <pre>{JSON.stringify(currentEvents, null, 2)}</pre>
+      
     </div>
   </div>
   
@@ -28,10 +27,9 @@
     }
     .events-list {
       background-color: #fff;
-      border-radius: 15px;
       padding: 20px; /* Padding inside the rectangle */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      height: 300px; /* Fixed height */
+      height: 275px; /* Fixed height */
       overflow-y: auto; /* Enable vertical scrolling */
     }
     .events-list ul {
