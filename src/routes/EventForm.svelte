@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import DisplayEvents from "./display_events.svelte";
+    import DisplayEvents from "./DisplayEvents.svelte";
     export let currentEvents = [];
   
     let event = {

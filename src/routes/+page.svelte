@@ -1,6 +1,8 @@
 <script>
+	import DisplayEvents from "./DisplayEvents.svelte";
+
     // @ts-nocheck
-    import EventForm from "./event_form.svelte";
+    import EventForm from "./EventForm.svelte";
     import Location from "./locations.svelte";
 
 
