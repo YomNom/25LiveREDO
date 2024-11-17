@@ -97,6 +97,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+<<<<<<< Updated upstream
         height: 100vh;
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
@@ -105,6 +106,16 @@
       .navbar {
         width: 100%;
         position: fixed;
+=======
+        font-family: 'Host Grotesk', sans-serif;
+        font-size: 1rem;
+        background-color: rgb(241, 239, 239);
+        padding-top: 10px;
+      }
+      .navbar {
+        width: 100%;
+        height: 60px;        
+>>>>>>> Stashed changes
         top: 0;
         left: 0;
         background-color: #d91515;
