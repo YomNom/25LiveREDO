@@ -1,10 +1,9 @@
 {
     "room_id": "DAAPSTAN111",
     "name": "DAAP Studio Annex 111",
-    "status": "Unavailable",
     "location": "DAAP Studio Annex",
     "category": "Design Study Lab",
-    "capacity": 25,
+    "capacity": 2,
     "resources": [
         "3D Printer",
         "White Board"

@@ -1,6 +1,6 @@
 {
-    "name": "ZIMMER 414",
-    "status": "Unavailable",
+    "room-id": "ZIMMER 414",
+    "name": "Zimmer Hall 414 - Classroom",
     "location": "Zimmer Hall",
     "category": "Study Room",
     "capacity": 8,

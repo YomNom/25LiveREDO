@@ -1,9 +1,9 @@
 {
-    "name": "TEACHERS 340",
-    "status": "Unavailable",
+    "room-id": "TEACHERS_340",
+    "name": "Teachers College 340 - Classroom",
     "location": "Teachers College",
     "category": "Study Room",
-    "capacity": 10,
+    "capacity": 20,
     "resources": [
         "Wi-Fi",
         "Power Outlets"
