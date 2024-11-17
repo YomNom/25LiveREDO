@@ -3,8 +3,6 @@
 <script lang="ts">
     import Popup from "./Popup.svelte";
 
-
-
     type Location = {
       name: string;
       status: string;
@@ -13,6 +11,8 @@
       capacity: number;
       resources: string[];
     };
+
+    let showPopup = false;
   
     let locations: Location[] = [
       { name: "60 West Charlton 220", status: "Available", location: "60 West Charlton", category: "Study Room", capacity: 74, resources: ["Carpet", "White Board", "TV", "+1"] },
@@ -44,13 +44,15 @@
   let selectedLocation: Location | null = null;
 
   function openPopup(location: Location) {
-    selectedLocation = location;
-    isPopupVisible = true;
+    // selectedLocation = location;
+    // isPopupVisible = true;
+    showPopup = true;
   }
 
   function closePopup() {
     isPopupVisible = false;
     selectedLocation = null;
+    showPopup = false;
   }
 
   function handleConfirm() {
@@ -91,7 +93,7 @@
       </thead>
       <tbody>
         {#each paginatedLocations as location}
-          <tr>
+          <tr on:click={() => openPopup(location)}>
             <td>{location.name}</td>
             <td class="status {location.status === 'Available' ? 'available' : 'unavailable'}">
               {location.status}
@@ -130,14 +132,16 @@
   </div>
 
   <!-- Popup Integration -->
-  <Popup
+  <!-- <Popup
     isVisible={isPopupVisible}
     message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
     confirmLabel="Yes"
     cancelLabel="No"
     on:confirm={handleConfirm}
     on:cancel={closePopup}
-  />
+  /> -->
+  <Popup {showPopup} on:close={closePopup}/>
+
 </div>
 
 <style>
@@ -148,6 +152,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    width: 100%;
   }
 
   .locations-table-wrapper {

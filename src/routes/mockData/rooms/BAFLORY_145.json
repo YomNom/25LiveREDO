@@ -1,0 +1,12 @@
+{
+    "room_id": "BAFLORY 145",
+    "name": "BA Flory Center 145",
+    "location": "BA Flory Center",
+    "category": "Lab",
+    "capacity": 20,
+    "resources": [
+        "Chemicals",
+        "Lab Equipment",
+        "Projector"
+    ]
+}
