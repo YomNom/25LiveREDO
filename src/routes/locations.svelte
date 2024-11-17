@@ -93,7 +93,7 @@
   </script>
   
   <div class="locations-container">
-    <h2>Your Locations</h2>
+    <h2>Select a Location</h2>
     <div class="header">
       <p class="location-count">{filteredLocations.length} available locations</p>
       <div class="filter">
