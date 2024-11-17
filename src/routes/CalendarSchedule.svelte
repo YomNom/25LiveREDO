@@ -1,10 +1,6 @@
 <script>
     const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const timeSlots = Array.from({ length: 17 }, (_, i) => `${7 + i}:00`);
-    import roomData from '../routes/mockData/60WCHARL_140.json' ;
-    console.log(roomData);
-
-
 </script>
 
 <style>
@@ -25,6 +21,9 @@
     .header {
         font-weight: bold;
         background-color: #f0f0f0;
+        align-items: center;
+        justify-content: center;
+        font-size: fit-content;
     }
 </style>
 
@@ -36,7 +35,11 @@
     {#each timeSlots as time}
         <div class="header">{time}</div>
         {#each weekdays as _}
-            <div>free</div>
+            <div>
+                <p style="font-size: 18px; padding: 1px; margin: 0">
+                    free
+                </p>
+            </div>
         {/each}
     {/each}
 </div>

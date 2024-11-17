@@ -10,10 +10,17 @@
       {#each tableData as row}
         <tr>
           <td style="width:30%">{row.name}</td>
-          <td style="display: flex">
-            {row.value} 
-            <ResourceTag {data}/>
-          </td>
+          {#if row.key === "resources"}
+            <td style="display: flex">
+              {#each row.value as tag}
+                <ResourceTag tag={tag} />
+              {/each}
+            </td>
+          {:else}
+            <td style="display: flex">
+              {row.value} 
+            </td>
+          {/if}
         </tr>
       {/each}
     </tbody>

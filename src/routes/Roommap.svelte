@@ -32,36 +32,37 @@
 </div> -->
 
 <script>
-  import { onMount } from 'svelte';
-  import mapboxgl from 'mapbox-gl';
-  import 'mapbox-gl/dist/mapbox-gl.css';
+  // import { onMount } from 'svelte';
+  // import mapboxgl from 'mapbox-gl';
+  // import 'mapbox-gl/dist/mapbox-gl.css';
 
-  const accessToken = 'pk.eyJ1IjoibmhxbmhhdC1iYXRjaDQzIiwiYSI6ImNsdnZ0aTFjbzFweHkycW85dDI1cXZwY2oifQ.WtkdamBLblQNz4p7C50BNQ'; // Replace with your Mapbox access token
-  const coordinates = [39.3299, -84.4400]; // Cincinnati coordinates
+  // const accessToken = 'pk.eyJ1IjoibmhxbmhhdC1iYXRjaDQzIiwiYSI6ImNsdnZ0aTFjbzFweHkycW85dDI1cXZwY2oifQ.WtkdamBLblQNz4p7C50BNQ'; // Replace with your Mapbox access token
+  // const coordinates = [39.3299, -84.4400]; // Cincinnati coordinates
 
-  let mapContainer;
+  // let mapContainer;
 
-  onMount(() => {
-    mapboxgl.accessToken = accessToken;
-    const map = new mapboxgl.Map({
-      container: mapContainer,
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: coordinates,
-      zoom: 13
-    });
+  // onMount(() => {
+  //   mapboxgl.accessToken = accessToken;
+  //   const map = new mapboxgl.Map({
+  //     container: mapContainer,
+  //     style: 'mapbox://styles/mapbox/streets-v11',
+  //     center: coordinates,
+  //     zoom: 13
+  //   });
 
-    new mapboxgl.Marker()
-      .setLngLat(coordinates)
-      .setPopup(new mapboxgl.Popup().setHTML('<h1>60 West Charlton</h1>'))
-      .addTo(map);
-  });
+  //   new mapboxgl.Marker()
+  //     .setLngLat(coordinates)
+  //     .setPopup(new mapboxgl.Popup().setHTML('<h1>60 West Charlton</h1>'))
+  //     .addTo(map);
+  // });
 </script>
 
 <style>
   .map-container {
     height: 400px;
     width: 100%;
+    background-color: #f0f0f0;
   }
 </style>
 
-<div class="map-container" bind:this={mapContainer}></div>
+<div class="map-container"></div>

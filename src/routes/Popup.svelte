@@ -11,7 +11,7 @@ import Table from "./Table.svelte";
       { key:"building" ,name: 'Building', value: '60 West Charlton' },
       { key:"roomName" ,name: 'Room Name', value: 'Classroom' },
       { key:"capacity" ,name: 'Max Capacity', value: '40' },
-      { key:"resources" ,name: 'Resoucres', value: ['Classroom Technology', 'Echo 360 Equipment'] },
+      { key:"resources" ,name: 'Resoucres', value: ["Carpet","Chairs","White Board","TV","Wi-Fi"] },
       { key:"hours" ,name: 'Hours', value: 'Value 3' }
 
 
@@ -30,9 +30,10 @@ import Table from "./Table.svelte";
           <div class="popup-content">
             <!-- table of information -->
             <Table {tableData} />
+
             <!-- calendar show -->
            <div class="calendar-dropdown">
-                <button on:click={() => showDropdownCalendar = !showDropdownCalendar}>
+                <button class="dropdown-button" on:click={() => showDropdownCalendar = !showDropdownCalendar}>
                 {showDropdownCalendar ? 'Hide Availabities' : 'Show Availabilities on Calendar'}
                 </button>
                 
@@ -45,7 +46,7 @@ import Table from "./Table.svelte";
 
             <!-- map -->
             <div class="map-dropdown">
-                <button class="dropdown-show" on:click={() => showDropdownMap = !showDropdownMap}>
+                <button class="dropdown-button" on:click={() => showDropdownMap = !showDropdownMap}>
                     {showDropdownMap ? 'Hide Availabities' : 'Show Availabilities on Calendar'}
                 </button>
                 
@@ -99,8 +100,24 @@ import Table from "./Table.svelte";
   }
 
   .dropdown-content{
-    margin: 5px;
-    max-width: 95%;
+    margin: 15px;
     justify-content: center;
-}
+  }
+  
+  .calendar-dropdown, .map-dropdown{
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .dropdown-button{
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border: #b9b9b9 solid 1px;
+    border-radius: 10px;
+  }
 </style>

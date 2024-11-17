@@ -1,0 +1,401 @@
+{
+    "availabilities":[
+        {
+            "id": 1,
+            "date": "2024-11-18",
+            "times": 
+                {
+                    "09:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    }, 
+                    "10:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "11:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "12:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "13:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "14:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "15:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "16:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "17:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "18:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "19:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "20:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "21:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "22:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    },
+                    "23:00": {
+                        "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                        "reserved":[]
+                    }
+                } 
+        },
+        {
+            "id": 2,
+            "date": "2024-11-19",
+            "times": {
+                "09:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }, 
+                "10:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "11:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "12:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "13:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "14:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "15:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "16:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "17:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "18:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "19:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "20:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "21:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "22:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "23:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }
+            }
+        },
+        {
+            "id": 3,
+            "date": "2024-11-20",
+            "times": {
+                "09:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }, 
+                "10:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "11:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "12:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "13:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "14:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "15:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "16:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "17:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "18:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "19:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "20:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "21:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "22:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "23:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }
+            }
+        },
+        {
+            "id": 4,
+            "date": "2024-11-21",
+            "times": {
+                "09:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }, 
+                "10:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "11:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "12:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "13:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "14:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "15:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "16:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "17:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "18:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "19:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "20:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "21:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "22:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "23:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }
+            }
+        },
+        {
+            "id": 5,
+            "date": "2024-11-22",
+            "times": {
+                "09:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }, 
+                "10:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "11:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "12:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "13:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "14:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "15:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "16:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "17:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "18:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "19:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "20:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "21:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "22:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "23:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }
+            }
+        },
+        {
+            "id": 6,
+            "date": "2024-11-23",
+            "times": {
+                "09:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }, 
+                "10:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "11:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "12:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "13:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "14:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "15:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "16:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "17:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "18:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "19:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "20:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "21:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "22:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                },
+                "23:00": {
+                    "free":["60WCHARL_220","60WCHARL_140", "ARTSCI_255", "DAAPSTAN_111", "TEACHERS_340", "ZIMMER_414","ARTSCI_27", "BAFLORY_145","CLIFTCT_1109", "LINDHALL_0075", "MAINTEI_838"],
+                    "reserved":[]
+                }
+            }
+        }
+    ]
+}

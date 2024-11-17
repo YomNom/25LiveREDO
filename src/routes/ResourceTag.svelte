@@ -1,16 +1,16 @@
 <script>
-    export let data;
+    export let tag;
 </script>
 
 <div class="container">
-    <p class="content">{data}</p>
+    <p class="content">{tag}</p>
 </div>
 
 <style>
     .container {
         width: fit-content;
         padding: 1px 5px;
-        margin-left: 20px;
+        margin-right: 20px;
         justify-content: center;
         align-items: center;
         border: 1px solid black;
