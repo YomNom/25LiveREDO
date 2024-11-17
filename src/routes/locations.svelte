@@ -1,10 +1,7 @@
-
-
 <script lang="ts">
     import Popup from "./Popup.svelte";
-
-
-
+    import InfoPopup from "./InfoPopup.svelte";
+  
     type Location = {
       name: string;
       status: string;
@@ -31,191 +28,259 @@
       { name: "WOLFSON 4300", status: "Available", location: "Wolfson Center", category: "Quiet Study", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
       { name: "ZIMMER 414", status: "Unavailable", location: "Zimmer Hall", category: "Study Room", capacity: 8, resources: ["White Board", "TV"] },
     ];
+  
+    // Filter state
+    let buildingFilter: string = "All";
+  
+    // Compute unique building names
+    $: buildingOptions = ["All", ...new Set(locations.map((location) => location.location))];
+  
+    // Filtered locations based on the selected building
+    $: filteredLocations = buildingFilter === "All"
+      ? locations
+      : locations.filter((location) => location.location === buildingFilter);
+  
     let currentPage = 1;
-  let itemsPerPage = 7;
-  let totalPages = Math.ceil(locations.length / itemsPerPage);
-
-  $: paginatedLocations = locations.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  );
-
-  let isPopupVisible = false;
-  let selectedLocation: Location | null = null;
-
-  function openPopup(location: Location) {
-    selectedLocation = location;
-    isPopupVisible = true;
-  }
-
-  function closePopup() {
-    isPopupVisible = false;
-    selectedLocation = null;
-  }
-
-  function handleConfirm() {
-  if (selectedLocation) {
-    // Update the status of the selected location
-    selectedLocation.status = "Unavailable";
-
-    // Ensure reactivity by explicitly reassigning the locations array
-    locations = [...locations];
-  }
-  closePopup();
-}
-
-
-  function changePage(newPage: number) {
-    if (newPage > 0 && newPage <= totalPages) {
-      currentPage = newPage;
+    let itemsPerPage = 7;
+    $: totalPages = Math.ceil(filteredLocations.length / itemsPerPage);
+  
+    $: paginatedLocations = filteredLocations.slice(
+      (currentPage - 1) * itemsPerPage,
+      currentPage * itemsPerPage
+    );
+  
+    let isPopupVisible = false;
+    let isInfoPopupVisible = false;
+    let selectedLocation: Location | null = null;
+  
+    function openPopup(location: Location) {
+      selectedLocation = location;
+      isPopupVisible = true;
     }
-  }
-</script>
-
-<div class="locations-container">
-  <h2>Your Locations</h2>
-  <p class="location-count">{locations.length} available locations</p>
-
-  <div class="locations-table-wrapper">
-    <table>
-      <thead>
-        <tr>
-          <th>Room Name</th>
-          <th>Status</th>
-          <th>Location</th>
-          <th>Categories</th>
-          <th>Max Capacity</th>
-          <th>Resources</th>
-          <th>Reserve</th>
-        </tr>
-      </thead>
-      <tbody>
-        {#each paginatedLocations as location}
+  
+    function openInfoPopup(location: Location) {
+      selectedLocation = location;
+      isInfoPopupVisible = true;
+    }
+  
+    function closePopup() {
+      isPopupVisible = false;
+      isInfoPopupVisible = false;
+      selectedLocation = null;
+    }
+  
+    function handleConfirm() {
+      if (selectedLocation) {
+        selectedLocation.status = "Unavailable";
+        locations = [...locations];
+      }
+      closePopup();
+    }
+  
+    function handleInfoPopupConfirm() {
+      if (selectedLocation) {
+        selectedLocation.status = "Unavailable";
+        locations = [...locations];
+      }
+      closePopup();
+    }
+  
+    function changePage(newPage: number) {
+      if (newPage > 0 && newPage <= totalPages) {
+        currentPage = newPage;
+      }
+    }
+  </script>
+  
+  <div class="locations-container">
+    <h2>Your Locations</h2>
+    <div class="header">
+      <p class="location-count">{filteredLocations.length} available locations</p>
+      <div class="filter">
+        <label for="building-filter">Filter by Building:</label>
+        <select id="building-filter" bind:value={buildingFilter}>
+          {#each buildingOptions as building}
+            <option value={building}>{building}</option>
+          {/each}
+        </select>
+      </div>
+    </div>
+  
+    <div class="locations-table-wrapper">
+      <table>
+        <thead>
           <tr>
-            <td>{location.name}</td>
-            <td class="status {location.status === 'Available' ? 'available' : 'unavailable'}">
-              {location.status}
-            </td>
-            <td>{location.location}</td>
-            <td>{location.category}</td>
-            <td>{location.capacity}</td>
-            <td>
-              {#each location.resources as resource}
-                <span class="resource">{resource}</span>
-              {/each}
-            </td>
-            <td>
-              <button
-                on:click={() => openPopup(location)}
-                disabled={location.status !== "Available"}
-                class="reserve-button"
-              >
-                Reserve
-              </button>
-            </td>
+            <th>Room Name</th>
+            <th>Status</th>
+            <th>Location</th>
+            <th>Categories</th>
+            <th>Max Capacity</th>
+            <th>Resources</th>
+            <th>Reserve</th>
           </tr>
-        {/each}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {#each paginatedLocations as location}
+            <tr>
+              <td on:click={() => openInfoPopup(location)} class="clickable">{location.name}</td>
+              <td class="status {location.status === 'Available' ? 'available' : 'unavailable'}">
+                {location.status}
+              </td>
+              <td>{location.location}</td>
+              <td>{location.category}</td>
+              <td>{location.capacity}</td>
+              <td>
+                {#each location.resources as resource}
+                  <span class="resource">{resource}</span>
+                {/each}
+              </td>
+              <td>
+                <button
+                  on:click={() => openPopup(location)}
+                  disabled={location.status !== "Available"}
+                  class="reserve-button"
+                >
+                  Reserve
+                </button>
+              </td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="pagination">
+      <button on:click={() => changePage(currentPage - 1)} disabled={currentPage === 1}>
+        Previous
+      </button>
+      <span>Page {currentPage} of {totalPages}</span>
+      <button on:click={() => changePage(currentPage + 1)} disabled={currentPage === totalPages}>
+        Next
+      </button>
+    </div>
+  
+    <!-- Popup Integration -->
+    <Popup
+      isVisible={isPopupVisible}
+      message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
+      confirmLabel="Yes"
+      cancelLabel="No"
+      on:confirm={handleConfirm}
+      on:cancel={closePopup}
+    />
+  
+    <!-- Room Info Popup -->
+    {#if isInfoPopupVisible && selectedLocation}
+      <InfoPopup
+        isVisible={isInfoPopupVisible}
+        location={selectedLocation}
+        confirmLabel="Reserve"
+        cancelLabel="Close"
+        on:confirm={handleInfoPopupConfirm}
+        on:cancel={closePopup}
+      />
+    {/if}
   </div>
-
-  <div class="pagination">
-    <button on:click={() => changePage(currentPage - 1)} disabled={currentPage === 1}>
-      Previous
-    </button>
-    <span>Page {currentPage} of {totalPages}</span>
-    <button on:click={() => changePage(currentPage + 1)} disabled={currentPage === totalPages}>
-      Next
-    </button>
-  </div>
-
-  <!-- Popup Integration -->
-  <Popup
-    isVisible={isPopupVisible}
-    message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
-    confirmLabel="Yes"
-    cancelLabel="No"
-    on:confirm={handleConfirm}
-    on:cancel={closePopup}
-  />
-</div>
-
-<style>
-
-  .locations-container {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-
-  .locations-table-wrapper {
-    overflow-x: auto;
-    margin-bottom: 15px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th, td {
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  th {
-    background: #f8f9fa;
-  }
-
-  .status {
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .status.available {
-    color: green;
-  }
-
-  .status.unavailable {
-    color: red;
-  }
-
-  .reserve-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-
-  .reserve-button:disabled {
-    background: #ccc;
-    cursor: not-allowed;
-  }
-
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .pagination button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-  }
-
-  .pagination button:disabled {
-    background-color: #ddd;
-    cursor: not-allowed;
-  }
-</style>
+  
+  <style>
+    .locations-container {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .filter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .locations-table-wrapper {
+      overflow-x: auto;
+      margin-bottom: 15px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    th {
+      background: #f8f9fa;
+    }
+  
+    .status {
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    .status.available {
+      color: green;
+    }
+  
+    .status.unavailable {
+      color: red;
+    }
+  
+    .resource {
+      display: inline-block;
+      padding: 3px 8px;
+      background: #e9ecef;
+      color: #495057;
+      border-radius: 5px;
+      margin-right: 5px;
+      font-size: 0.875rem;
+    }
+  
+    .reserve-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  
+    .reserve-button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .pagination button {
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: none;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .pagination button:disabled {
+      background-color: #ddd;
+      cursor: not-allowed;
+    }
+  </style>
+  

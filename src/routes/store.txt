@@ -1,4 +1,7 @@
 <script lang="ts">
+    import Popup from "./Popup.svelte";
+    import InfoPopup from "./InfoPopup.svelte";
+  
     type Location = {
       name: string;
       status: string;
@@ -28,7 +31,6 @@
   
     let currentPage = 1;
     let itemsPerPage = 7;
-  
     let totalPages = Math.ceil(locations.length / itemsPerPage);
   
     $: paginatedLocations = locations.slice(
@@ -36,24 +38,40 @@
       currentPage * itemsPerPage
     );
   
-    let showModal = false;
+    let isPopupVisible = false;
+    let isInfoPopupVisible = false;
     let selectedLocation: Location | null = null;
   
-    function openModal(location: Location) {
+    function openPopup(location: Location) {
       selectedLocation = location;
-      showModal = true;
+      isPopupVisible = true;
     }
   
-    function closeModal() {
-      showModal = false;
+    function openInfoPopup(location: Location) {
+      selectedLocation = location;
+      isInfoPopupVisible = true;
+    }
+  
+    function closePopup() {
+      isPopupVisible = false;
+      isInfoPopupVisible = false;
       selectedLocation = null;
     }
   
-    function confirmReservation() {
+    function handleConfirm() {
       if (selectedLocation) {
         selectedLocation.status = "Unavailable";
+        locations = [...locations];
       }
-      closeModal();
+      closePopup();
+    }
+  
+    function handleInfoPopupConfirm() {
+      if (selectedLocation) {
+        selectedLocation.status = "Unavailable";
+        locations = [...locations];
+      }
+      closePopup();
     }
   
     function changePage(newPage: number) {
@@ -83,7 +101,7 @@
         <tbody>
           {#each paginatedLocations as location}
             <tr>
-              <td>{location.name}</td>
+              <td on:click={() => openInfoPopup(location)} class="clickable">{location.name}</td>
               <td class="status {location.status === 'Available' ? 'available' : 'unavailable'}">
                 {location.status}
               </td>
@@ -97,7 +115,7 @@
               </td>
               <td>
                 <button
-                  on:click={() => openModal(location)}
+                  on:click={() => openPopup(location)}
                   disabled={location.status !== "Available"}
                   class="reserve-button"
                 >
@@ -120,17 +138,26 @@
       </button>
     </div>
   
-    {#if showModal}
-      <div class="modal-overlay">
-        <div class="modal-content">
-          <h3>Confirm Reservation</h3>
-          <p>Are you sure you want to reserve <strong>{selectedLocation?.name}</strong>?</p>
-          <div class="modal-actions">
-            <button class="confirm-button" on:click={confirmReservation}>Yes</button>
-            <button class="cancel-button" on:click={closeModal}>No</button>
-          </div>
-        </div>
-      </div>
+    <!-- Reservation Confirmation Popup -->
+    <Popup
+      isVisible={isPopupVisible}
+      message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
+      confirmLabel="Yes"
+      cancelLabel="No"
+      on:confirm={handleConfirm}
+      on:cancel={closePopup}
+    />
+  
+    <!-- Room Info Popup -->
+    {#if isInfoPopupVisible && selectedLocation}
+      <InfoPopup
+        isVisible={isInfoPopupVisible}
+        location={selectedLocation}
+        confirmLabel="Reserve"
+        cancelLabel="Close"
+        on:confirm={handleInfoPopupConfirm}
+        on:cancel={closePopup}
+      />
     {/if}
   </div>
   
@@ -143,16 +170,6 @@
       margin-top: 20px;
     }
   
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-  
-    .location-count {
-      margin-bottom: 15px;
-      color: #6c757d;
-    }
-  
     .locations-table-wrapper {
       overflow-x: auto;
       margin-bottom: 15px;
@@ -163,8 +180,7 @@
       border-collapse: collapse;
     }
   
-    th,
-    td {
+    th, td {
       text-align: left;
       padding: 10px;
       border-bottom: 1px solid #ddd;
@@ -187,14 +203,10 @@
       color: red;
     }
   
-    .resource {
-      display: inline-block;
-      padding: 3px 8px;
-      background: #e9ecef;
-      color: #495057;
-      border-radius: 5px;
-      margin-right: 5px;
-      font-size: 0.875rem;
+    .clickable {
+      color: #007bff;
+      cursor: pointer;
+      text-decoration: underline;
     }
   
     .reserve-button {
@@ -214,68 +226,31 @@
     .pagination {
       display: flex;
       justify-content: center;
-      align-items: center;
       gap: 10px;
-      margin-top: 10px;
     }
   
     .pagination button {
       padding: 5px 10px;
-      border: none;
       border-radius: 4px;
-      background-color: #007bff;
+      border: none;
+      background: #007bff;
       color: white;
       cursor: pointer;
     }
   
     .pagination button:disabled {
-      background-color: #ddd;
+      background: #ddd;
       cursor: not-allowed;
     }
   
-    .modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .modal-content {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
-      width: 300px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-  
-    .modal-actions {
-      margin-top: 20px;
-      display: flex;
-      justify-content: space-around;
-    }
-  
-    .confirm-button {
-      background-color: green;
-      color: white;
-      padding: 5px 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  
-    .cancel-button {
-      background-color: red;
-      color: white;
-      padding: 5px 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    .resource {
+      display: inline-block;
+      padding: 3px 8px;
+      background: #e9ecef;
+      color: #495057;
+      border-radius: 5px;
+      margin-right: 5px;
+      font-size: 0.875rem;
     }
   </style>
   
