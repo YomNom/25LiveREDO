@@ -29,7 +29,8 @@
       background-color: #fff;
       padding: 20px; /* Padding inside the rectangle */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      height: 275px; /* Fixed height */
+      width: 400px;
+      height: 275px; 
       overflow-y: auto; /* Enable vertical scrolling */
     }
     .events-list ul {
