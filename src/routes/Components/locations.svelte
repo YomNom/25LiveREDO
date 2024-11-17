@@ -15,10 +15,10 @@
     let showPopup = false;
   
     let locations: Location[] = [
-      { name: "60 West Charlton 220", status: "Available", location: "60 West Charlton", category: "Study Room", capacity: 74, resources: ["Carpet", "White Board", "TV", "+1"] },
+      { name: "60 West Charlton 220", status: "Available", location: "60 West Charlton", category: "Study Room", capacity: 74, resources: ["Carpet", "White Board", "TV", "+ 1"] },
       { name: "60 West Charlton 140", status: "Unavailable", location: "60 West Charlton", category: "Study Room", capacity: 6, resources: ["Projector", "White Board"] },
       { name: "Clifton Court Hall", status: "Available", location: "Clifton Court Hall", category: "Study room", capacity: 20, resources: ["Wi-Fi", "Projector"] },
-      { name: "Linder Business Center 102", status: "Available", location: "Linder Business Building", category: "Study Room", capacity: 10, resources: ["White Board", "Wi-Fi"] },
+      { name: "Lindner Business Center 102", status: "Available", location: "Linder Business Building", category: "Study Room", capacity: 10, resources: ["White Board", "Wi-Fi"] },
       { name: "Teachers 340", status: "Unavailable", location: "Teachers College", category: "Studio", capacity: 15, resources: ["Easel", "Canvas Supplies"] },
       { name: "Zimmer", status: "Available", location: "Zimmer Roof Garden", category: "Outdoors", capacity: 50, resources: ["Outdoors"] },
       { name: "Study Room 201", status: "Available", location: "Langsam Library", category: "Quiet Study", capacity: 50, resources: ["Wi-Fi", "Power Outlets"] },
@@ -31,7 +31,7 @@
       { name: "Wolfson Center 4300", status: "Available", location: "Wolfson Center", category: "Quiet Study", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
       { name: "Zimmer 414", status: "Unavailable", location: "Zimmer Hall", category: "Study Room", capacity: 8, resources: ["White Board", "TV"] },
     ];
-    let currentPage = 1;
+  let currentPage = 1;
   let itemsPerPage = 7;
   let totalPages = Math.ceil(locations.length / itemsPerPage);
 
@@ -177,7 +177,6 @@
 
   .status {
     font-weight: bold;
-    text-align: center;
   }
 
   .status.available {
@@ -222,5 +221,11 @@
   .pagination button:disabled {
     background-color: #ddd;
     cursor: not-allowed;
+  }
+
+  .resource {
+    margin-right: 5px; 
+    background-color: #f0f0f0;
+    border-radius: 3px; 
   }
 </style>

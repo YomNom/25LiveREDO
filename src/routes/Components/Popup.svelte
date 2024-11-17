@@ -53,7 +53,7 @@
             <!-- map -->
             <div class="map-dropdown">
                 <button class="dropdown-button" on:click={() => showDropdownMap = !showDropdownMap}>
-                    {showDropdownMap ? 'Hide Availabities' : 'Show Availabilities on Calendar'}
+                    {showDropdownMap ? 'Hide Directions' : 'Show Directions to the Room'}
                 </button>
                 
                 {#if showDropdownMap}
