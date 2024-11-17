@@ -2,10 +2,9 @@
 <script>
 	import CalendarSchedule from "./CalendarSchedule.svelte";
 	import Roommap from "./Roommap.svelte";
-import Table from "./Table.svelte";
+  import Table from "./Table.svelte";
 
     export let showPopup = false;
-    export let message = "This is a popup!";
     let tableData = [
 
       { key:"building" ,name: 'Building', value: '60 West Charlton' },
@@ -26,6 +25,7 @@ import Table from "./Table.svelte";
       <div class="popup">
           <div class="popup-header">
             <h1>60 West Charlton - Room 200</h1>
+            <button class="close-button" on:click={() => showPopup = !showPopup}>X</button>
           </div>
           <div class="popup-content">
             <!-- table of information -->
@@ -56,7 +56,6 @@ import Table from "./Table.svelte";
                     </div>
                 {/if}
             </div>
-            <button on:click={() => showPopup = !showPopup}>Close</button>
           </div>
 
           
@@ -93,6 +92,8 @@ import Table from "./Table.svelte";
     display: flex;
     padding: 0 20px;
     border-bottom: 1px black solid;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .popup-content{
@@ -119,5 +120,16 @@ import Table from "./Table.svelte";
     width: 100%;
     border: #b9b9b9 solid 1px;
     border-radius: 10px;
+  }
+
+  .close-button{
+    background-color: #f1f1f1;
+    width: 30px;
+    height: 30px;
+    color: rgb(95, 95, 95);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
   }
 </style>
