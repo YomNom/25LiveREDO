@@ -2,30 +2,36 @@
 <script>
 	import CalendarSchedule from "./CalendarSchedule.svelte";
 	import Roommap from "./Roommap.svelte";
-  import Table from "./Table.svelte";
+	import Table from "./Table.svelte";
+  import { createEventDispatcher } from 'svelte';
 
-    export let showPopup = false;
-    let tableData = [
+  const dispatch = createEventDispatcher();
 
-      { key:"building" ,name: 'Building', value: '60 West Charlton' },
-      { key:"roomName" ,name: 'Room Name', value: 'Classroom' },
-      { key:"capacity" ,name: 'Max Capacity', value: '40' },
-      { key:"resources" ,name: 'Resoucres', value: ["Carpet","Chairs","White Board","TV","Wi-Fi"] },
-      { key:"hours" ,name: 'Hours', value: 'Value 3' }
+  function closePopup() {
+    dispatch('close');
+  }
+  export let showPopup = false;
+  let tableData = [
+
+    { key:"building" ,name: 'Building', value: '60 West Charlton' },
+    { key:"roomName" ,name: 'Room Name', value: 'Classroom' },
+    { key:"capacity" ,name: 'Max Capacity', value: '40' },
+    { key:"resources" ,name: 'Resoucres', value: ["Carpet","Chairs","White Board","TV","Wi-Fi"] },
+    { key:"hours" ,name: 'Hours', value: 'Value 3' }
 
 
-    ];
-    let showDropdownCalendar = true;
-    let showDropdownMap= false;
+  ];
+  let showDropdownCalendar = true;
+  let showDropdownMap= false;
     
 </script>
   
 {#if showPopup}
-  <div class="popup-overlay">
-      <div class="popup">
+  <div class="popup-overlay" on:click={closePopup}>
+      <div class="popup" on:click|stopPropagation>
           <div class="popup-header">
             <h1>60 West Charlton - Room 200</h1>
-            <button class="close-button" on:click={() => showPopup = !showPopup}>X</button>
+            <button class="close-button" on:click={closePopup}>X</button>
           </div>
           <div class="popup-content">
             <!-- table of information -->

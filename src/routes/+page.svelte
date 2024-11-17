@@ -1,9 +1,10 @@
 <script>
     // @ts-nocheck
     
-    import EventForm from "./EventForm.svelte";
-    import DisplayEvents from "./DisplayEvents.svelte";
-	  import Popup from "./Popup.svelte";
+    import EventForm from "./Components/EventForm.svelte";
+    import DisplayEvents from "./Components/DisplayEvents.svelte";
+	  import Popup from "./Components/Popup.svelte";
+	  import Locations from "./Components/Locations.svelte";
     
     let currentEvents = [
       {
@@ -76,12 +77,16 @@
           <img src="/UC-ReadoutLogo.png" alt="UC Readout Logo" class="UClogo" width="125px" height="50px"/>
         </div>
       </nav>
-    
-      <div class="top-page">
-        <EventForm {currentEvents} />
-        <DisplayEvents {currentEvents} title="Current Events" />
-        <button on:click={() => showPopup = !showPopup}>Show Popup</button>
-        <Popup {showPopup} message="This is a popup message!" />
+      
+      <div class="body-container">
+        <div class="top-page">
+          <EventForm {currentEvents} />
+          <DisplayEvents {currentEvents} title="Current Events" />
+        </div>
+        <div class="table-container">
+          <Locations />
+        </div>
+        <button >Show Popup</button>
       </div>
     </main>
     
@@ -90,15 +95,16 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 70px); /* Adjust for navbar height */
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
-        padding-top: 60px; /* Adjust for navbar height */
+        margin-top: 60px; /* Adjust for navbar height */
         background-color: #afabab;
-
+        padding-top: 10px;
       }
       .navbar {
         width: 100%;
+        height: 60px;
         position: fixed;
         top: 0;
         left: 0;
@@ -107,12 +113,33 @@
       .UClogo {
         margin-left: 20px; /* Adjust the value as needed */
       }
+      .body-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Align components to the top */
+        align-items: center; /* Center components horizontally */
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        box-sizing: border-box;
+      }
+
       .top-page {
+        display: flex;
+        flex-direction: row; /* Stack components horizontally */
+        justify-content: space-between; /* Center components horizontally */
+        align-items: flex-start; /* Align components to the top */
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .table-container {
         display: flex;
         flex-direction: row; /* Stack components horizontally */
         justify-content: center; /* Center components horizontally */
         align-items: flex-start; /* Align components to the top */
         width: 100%;
+        min-height: 500px;
         padding: 10px;
         box-sizing: border-box;
       }
