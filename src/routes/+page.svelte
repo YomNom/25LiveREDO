@@ -26,7 +26,6 @@
         <div class="table-container">
           <Locations />
         </div>
-        <button >Show Popup</button>
       </div>
     </main>
     
@@ -39,7 +38,8 @@
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
         margin-top: 60px; /* Adjust for navbar height */
-        background-color: #afabab;
+        background-color: rgba(185, 184, 184, 0.552)
+        ;
         padding-top: 10px;
       }
       .navbar {
