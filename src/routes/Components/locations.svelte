@@ -1,39 +1,27 @@
-
-
 <script lang="ts">
-    import Popup from "./Popup.svelte";
+  import Popup from "./Popup.svelte";
 
-    type Location = {
-      name: string;
-      status: string;
-      location: string;
-      category: string;
-      capacity: number;
-      resources: string[];
-    };
+  type Room = {
+    room_id: string;
+    name: string;
+    location: string;
+    category: string;
+    capacity: number;
+    resources: string[];
+  };
 
-    let showPopup = false;
+  let showPopup = false;
+
+  import { rooms } from "../store"; 
+	import ResourceTag from "./ResourceTag.svelte";
+	import ReservePopup from "./ReservePopup.svelte";
   
-    let locations: Location[] = [
-      { name: "60 West Charlton 220", status: "Available", location: "60 West Charlton", category: "Study Room", capacity: 74, resources: ["Carpet", "White Board", "TV", "+ 1"] },
-      { name: "60 West Charlton 140", status: "Unavailable", location: "60 West Charlton", category: "Study Room", capacity: 6, resources: ["Projector", "White Board"] },
-      { name: "Clifton Court Hall", status: "Available", location: "Clifton Court Hall", category: "Study room", capacity: 20, resources: ["Wi-Fi", "Projector"] },
-      { name: "Lindner Business Center 102", status: "Available", location: "Linder Business Building", category: "Study Room", capacity: 10, resources: ["White Board", "Wi-Fi"] },
-      { name: "Teachers 340", status: "Unavailable", location: "Teachers College", category: "Studio", capacity: 15, resources: ["Easel", "Canvas Supplies"] },
-      { name: "Zimmer", status: "Available", location: "Zimmer Roof Garden", category: "Outdoors", capacity: 50, resources: ["Outdoors"] },
-      { name: "Study Room 201", status: "Available", location: "Langsam Library", category: "Quiet Study", capacity: 50, resources: ["Wi-Fi", "Power Outlets"] },
-      { name: "Computer Science Lab 300", status: "Unavailable", location: "Mantei Center", category: "Lab", capacity: 30, resources: ["Computers", "Wi-Fi", "White Board"] },
-      { name: "Art Sci 255", status: "Available", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 12, resources: ["TV", "Wi-Fi"] },
-      { name: "Art Sci 27", status: "Available", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 5, resources: ["Piano", "Soundproof Walls"] },
-      { name: "Teachers 344", status: "Unavailable", location: "Teachers College", category: "Study Room", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
-      { name: "UCBA Flory Hall 145", status: "Available", location: "BA Flory Center", category: "Lab", capacity: 20, resources: ["Chemicals", "Lab Equipment", "Projector"] },
-      { name: "Design Lab 401", status: "Unavailable", location: "DAAP Design Building", category: "Lab", capacity: 25, resources: ["3D Printer", "White Board"] },
-      { name: "Wolfson Center 4300", status: "Available", location: "Wolfson Center", category: "Quiet Study", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
-      { name: "Zimmer 414", status: "Unavailable", location: "Zimmer Hall", category: "Study Room", capacity: 8, resources: ["White Board", "TV"] },
-    ];
+  let locations = Object.values(rooms);
+  let countRooms = Object.keys(rooms).length;
+
   let currentPage = 1;
-  let itemsPerPage = 7;
-  let totalPages = Math.ceil(locations.length / itemsPerPage);
+  let itemsPerPage = 6;
+  let totalPages = Math.ceil( countRooms / itemsPerPage);
 
   $: paginatedLocations = locations.slice(
     (currentPage - 1) * itemsPerPage,
@@ -41,26 +29,26 @@
   );
 
   let isPopupVisible = false;
-  let selectedLocation: Location | null = null;
+  let selectedLocation: Room | null = null;
 
-  function openPopup(location: Location) {
-    // selectedLocation = location;
-    // isPopupVisible = true;
+  function openPopup(location: Room) {
     showPopup = true;
+    selectedLocation = location;
+  }
+
+  function reservePopup(location: Room){
+    selectedLocation = location;
+    isPopupVisible = true;
   }
 
   function closePopup() {
-    isPopupVisible = false;
-    selectedLocation = null;
-    showPopup = false;
+    if (isPopupVisible) isPopupVisible = false;
+    // selectedLocation = null;
+    if (showPopup) showPopup = false;
   }
 
   function handleConfirm() {
   if (selectedLocation) {
-    // Update the status of the selected location
-    selectedLocation.status = "Unavailable";
-
-    // Ensure reactivity by explicitly reassigning the locations array
     locations = [...locations];
   }
   closePopup();
@@ -83,7 +71,6 @@
       <thead>
         <tr>
           <th>Room Name</th>
-          <th>Status</th>
           <th>Location</th>
           <th>Categories</th>
           <th>Max Capacity</th>
@@ -93,23 +80,20 @@
       </thead>
       <tbody>
         {#each paginatedLocations as location}
-          <tr on:click={() => openPopup(location)}>
-            <td>{location.name}</td>
-            <td class="status {location.status === 'Available' ? 'available' : 'unavailable'}">
-              {location.status}
-            </td>
-            <td>{location.location}</td>
-            <td>{location.category}</td>
-            <td>{location.capacity}</td>
-            <td>
+          <tr>
+            <td class="cell-name" on:click={() => openPopup(location)}>{location.name}</td>
+            <td class="cell">{location.location}</td>
+            <td class="cell">{location.category}</td>
+            <td class="cell">{location.capacity}</td>
+            <td class="cell" style="display: flex;">
               {#each location.resources as resource}
-                <span class="resource">{resource}</span>
+                <ResourceTag tag={resource} />
               {/each}
             </td>
-            <td>
+            <td class="cell">
               <button
-                on:click={() => openPopup(location)}
-                disabled={location.status !== "Available"}
+                on:click={() => reservePopup(location)}
+                disabled={false}
                 class="reserve-button"
               >
                 Reserve
@@ -130,17 +114,20 @@
       Next
     </button>
   </div>
+  {console.log(selectedLocation)}
 
   <!-- Popup Integration -->
-  <!-- <Popup
+  <ReservePopup
     isVisible={isPopupVisible}
     message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
     confirmLabel="Yes"
     cancelLabel="No"
     on:confirm={handleConfirm}
     on:cancel={closePopup}
-  /> -->
-  <Popup {showPopup} on:close={closePopup}/>
+  />
+  
+  {console.log(selectedLocation)}
+  <Popup {showPopup} {selectedLocation} on:close={closePopup}/>
 
 </div>
 
@@ -227,5 +214,19 @@
     margin-right: 5px; 
     background-color: #f0f0f0;
     border-radius: 3px; 
+  }
+
+  .cell{
+    height: 40px; 
+    padding: 0;
+    align-items: center;
+  }
+
+  .cell-name{
+    height: 40px; 
+    padding: 0;
+    align-items: center;
+    color: blue;
+    text-decoration: underline;
   }
 </style>
