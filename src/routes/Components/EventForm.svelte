@@ -45,14 +45,8 @@
     });
   
     function confirmEvent() {
-      const [year, month, day] = event.date.split('-');
-      const formattedDate = `${month}-${day}-${year}`;
-      event.date = formattedDate;
-      event.startTime = formatTime(event.startTime);  
-      event.endTime = formatTime(event.endTime);  
-      
-      const eventStartDateTime = new Date(`${formattedDate}T${event.startTime}`);
-      const eventEndDateTime = new Date(`${formattedDate}T${event.endTime}`);
+      const eventStartDateTime = new Date(`${event.date}T${event.startTime}`);
+      const eventEndDateTime = new Date(`${event.date}T${event.endTime}`);
       const now = new Date();
 
       // Extract hours and periods (AM/PM) from start and end times
@@ -60,6 +54,14 @@
       const startPeriod = +startHours >= 12 ? 'PM' : 'AM';
       const [endHours, endMinutes] = event.endTime.split(':');
       const endPeriod = +endHours >= 12 ? 'PM' : 'AM';
+
+      const [year, month, day] = event.date.split('-');
+      const formattedDate = `${month}-${day}-${year}`;
+      event.date = formattedDate;
+      event.startTime = formatTime(event.startTime);  
+      event.endTime = formatTime(event.endTime);  
+      console.log("I'm here");
+      
 
       if (eventStartDateTime < now) {
         errorMessage = 'Scheduled start time cannot be before the current time.';
