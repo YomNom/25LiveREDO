@@ -6,7 +6,7 @@
 <table>
   <tbody>
     {#each Object.entries(selectedLocation) as [key, value]}
-      {#if key !== 'room_id'}
+      {#if key !== 'room_id' && key !== 'coordinates'}
         <tr>
           <td style="width:30%">
             {key.toUpperCase()}

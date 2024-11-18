@@ -10,6 +10,7 @@
 		category: string;
 		capacity: number;
 		resources: string[];
+		coordinates: number[];
 	};
 
 	let showPopup = false;
@@ -172,7 +173,6 @@
 		on:cancel={closePopup}
 	/> -->
 
-	<!-- {console.log(selectedLocation)} -->
 	<Popup {showPopup} {selectedLocation} on:close={closePopup} />
 </div>
 
