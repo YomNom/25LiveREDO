@@ -1,7 +1,6 @@
 <script lang="ts">
   import Popup from "./Popup.svelte";
 
-<<<<<<< HEAD
   type Room = {
     room_id: string;
     name: string;
@@ -10,16 +9,6 @@
     capacity: number;
     resources: string[];
   };
-=======
-    type Location = {
-      room_id: string;
-      name: string;
-      location: string;
-      category: string;
-      capacity: number;
-      resources: string[];
-    };
->>>>>>> 914af2b80668cba50b7cf0d13c57aab006710bac
 
   let showPopup = false;
 
@@ -27,36 +16,12 @@
 	import ResourceTag from "./ResourceTag.svelte";
 	import ReservePopup from "./ReservePopup.svelte";
   
-<<<<<<< HEAD
   let locations = Object.values(rooms);
   let countRooms = Object.keys(rooms).length;
 
   let currentPage = 1;
   let itemsPerPage = 6;
   let totalPages = Math.ceil( countRooms / itemsPerPage);
-=======
-    let locations: Location[] = [
-      {room_id: "60WCHARL220", name: "60 West Charlton 220", location: "60 West Charlton", category: "Classroom", capacity: 74, resources: ["Classroom Technology", "Echo 360 Equipment"] }, 
-      {room_id: "60WCHARL140", name: "60 West Charlton 140", location: "60 West Charlton", category: "Classroom", capacity: 34, resources: ["Classroom Technology"] },
-      {room_id: "TEACHERS 340", name: "Teachers College 340", location: "Teachers College", category: "Studio", capacity: 15, resources: ["Easel", "Canvas Supplies"] },
-      {room_id: "ARTSCI 255", name: "Arts & Sciences Hall 255", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 12, resources: ["TV", "Wi-Fi"] },
-      {room_id: "ARTSCI 27", name: "Arts & Sciences Hall 027", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 5, resources: ["Piano", "Soundproof Walls"] },
-      {room_id: "TEACHERS 340", name: "Teachers College 340", location: "Teachers College", category: "Study Room", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
-      {room_id: "BAFLORY 145", name: "BA Flory Center 145", location: "BA Flory Center", category: "Lab", capacity: 20, resources: ["Chemicals", "Lab Equipment", "Projector"] },
-      {room_id: "WOLFSON 4300", name: "Wolfson Center 4300", location: "Wolfson Center", category: "Quiet Study", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
-      {room_id: "ZIMMER 414", name: "Zimmer Hall 414", location: "Zimmer Hall", category: "Study Room", capacity: 8, resources: ["White Board", "TV"] },
-      {room_id: "MANTEI 408", name: "Mantei Center 408", location: "Mantei Center", category: "Conference Room", capacity: 38, resources: ["Projector", "Whiteboard", "Teleconference Equipment"]}, 
-      {room_id: "LANGSAM 502", name: "Langsam Library 502", location: "Langsam Library", category: "Study Room",capacity: 6, resources: []}, 
-      {room_id: "LANGSAM 519", name: "Langsam Library 519", location: "Langsam Library",  category: "Study Room", capacity: 2, resources: []},
-      {room_id: "LANGSAM 413", name: "Langsam Library 413" , location: "Langsam Library", category: "Audio Recording Room", capacity: 1, resources: ["Audio Recording Equipment"]},
-      {room_id: "LINDHALL 0027", name: "Lindhall 0027",  location: "Carl H. Lindner Hall", category: "Study Room",capacity: 8, resources: ["TV", "Whiteboard"]},
-      {room_id: "LINDHALL 0040", name: "Lindhall 0040", location: "Carl H. Lindner Hall", category: "Classroom", capacity: 42, resources: ["Echo 360 Equipment", "Projector"]},
-      {room_id: "BALDWIN 548", name: "Baldwin Hall 548",  location: "Baldwin Hall", category: "Computer Instrument Lab", capacity: 24, resources: ["Classroom Technology"]}
-    ];
-    let currentPage = 1;
-  let itemsPerPage = 7;
-  let totalPages = Math.ceil(locations.length / itemsPerPage);
->>>>>>> 914af2b80668cba50b7cf0d13c57aab006710bac
 
   $: paginatedLocations = locations.slice(
     (currentPage - 1) * itemsPerPage,
