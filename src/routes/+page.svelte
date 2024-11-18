@@ -7,7 +7,13 @@
 	  import Locations from "./Components/Locations.svelte";
     
     let currentEvents = [
-      
+      {
+        name: 'Sample Event',
+        date: '2023-10-01',
+        startTime: '10:00',
+        endTime: '11:00',
+        location: 'Sample Location'
+      }
     ];
     let  showPopup = false;
     </script>
@@ -34,11 +40,10 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: calc(100vh - 70px); /* Adjust for navbar height */
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
         margin-top: 60px; /* Adjust for navbar height */
-        background-color: rgba(185, 184, 184, 0.552)
+        background-color: #F8F5F2
         ;
         padding-top: 10px;
       }
