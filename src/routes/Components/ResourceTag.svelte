@@ -9,6 +9,7 @@
 <style>
     .container {
         width: fit-content;
+        height: fit-content;
         padding: 1px 5px;
         margin-right: 20px;
         justify-content: center;
