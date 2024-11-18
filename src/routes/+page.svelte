@@ -32,7 +32,6 @@
         <div class="table-container">
           <Locations />
         </div>
-        <button >Show Popup</button>
       </div>
     </main>
     
@@ -41,11 +40,10 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: calc(100vh - 70px); /* Adjust for navbar height */
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
         margin-top: 60px; /* Adjust for navbar height */
-        background-color: #afabab;
+        background-color: #e6e5e5;
         padding-top: 10px;
       }
       .navbar {

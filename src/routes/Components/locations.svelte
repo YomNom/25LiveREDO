@@ -4,8 +4,8 @@
     import Popup from "./Popup.svelte";
 
     type Location = {
+      room_id: string;
       name: string;
-      status: string;
       location: string;
       category: string;
       capacity: number;
@@ -15,21 +15,22 @@
     let showPopup = false;
   
     let locations: Location[] = [
-      { name: "60 West Charlton 220", status: "Available", location: "60 West Charlton", category: "Study Room", capacity: 74, resources: ["Carpet", "White Board", "TV", "+1"] },
-      { name: "60WCHARL 140", status: "Unavailable", location: "60 West Charlton", category: "Study Room", capacity: 6, resources: ["Projector", "White Board"] },
-      { name: "Clifton Court Hall", status: "Available", location: "Clifton Court Hall", category: "Study room", capacity: 20, resources: ["Wi-Fi", "Projector"] },
-      { name: "Linder Business Center 102", status: "Available", location: "Linder Business Building", category: "Study Room", capacity: 10, resources: ["White Board", "Wi-Fi"] },
-      { name: "TEACHERS 340", status: "Unavailable", location: "Teachers College", category: "Studio", capacity: 15, resources: ["Easel", "Canvas Supplies"] },
-      { name: "ZIMMRRF", status: "Available", location: "Zimmer Roof Garden", category: "Outdoors", capacity: 50, resources: ["Outdoors"] },
-      { name: "Study room 201", status: "Available", location: "Langsam Library", category: "Quiet Study", capacity: 50, resources: ["Wi-Fi", "Power Outlets"] },
-      { name: "Computer Science Lab 300", status: "Unavailable", location: "Mantei Center", category: "Lab", capacity: 30, resources: ["Computers", "Wi-Fi", "White Board"] },
-      { name: "ARTSCI 255", status: "Available", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 12, resources: ["TV", "Wi-Fi"] },
-      { name: "ARTSCI 27", status: "Available", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 5, resources: ["Piano", "Soundproof Walls"] },
-      { name: "TEACHERS 340", status: "Unavailable", location: "Teachers College", category: "Study Room", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
-      { name: "BAFLORY 145", status: "Available", location: "BA Flory Center", category: "Lab", capacity: 20, resources: ["Chemicals", "Lab Equipment", "Projector"] },
-      { name: "Design Lab 401", status: "Unavailable", location: "DAAP Design Building", category: "Lab", capacity: 25, resources: ["3D Printer", "White Board"] },
-      { name: "WOLFSON 4300", status: "Available", location: "Wolfson Center", category: "Quiet Study", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
-      { name: "ZIMMER 414", status: "Unavailable", location: "Zimmer Hall", category: "Study Room", capacity: 8, resources: ["White Board", "TV"] },
+      {room_id: "60WCHARL220", name: "60 West Charlton 220", location: "60 West Charlton", category: "Classroom", capacity: 74, resources: ["Classroom Technology", "Echo 360 Equipment"] }, 
+      {room_id: "60WCHARL140", name: "60 West Charlton 140", location: "60 West Charlton", category: "Classroom", capacity: 34, resources: ["Classroom Technology"] },
+      {room_id: "TEACHERS 340", name: "Teachers College 340", location: "Teachers College", category: "Studio", capacity: 15, resources: ["Easel", "Canvas Supplies"] },
+      {room_id: "ARTSCI 255", name: "Arts & Sciences Hall 255", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 12, resources: ["TV", "Wi-Fi"] },
+      {room_id: "ARTSCI 27", name: "Arts & Sciences Hall 027", location: "Arts & Sciences Hall", category: "Meeting Room", capacity: 5, resources: ["Piano", "Soundproof Walls"] },
+      {room_id: "TEACHERS 340", name: "Teachers College 340", location: "Teachers College", category: "Study Room", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
+      {room_id: "BAFLORY 145", name: "BA Flory Center 145", location: "BA Flory Center", category: "Lab", capacity: 20, resources: ["Chemicals", "Lab Equipment", "Projector"] },
+      {room_id: "WOLFSON 4300", name: "Wolfson Center 4300", location: "Wolfson Center", category: "Quiet Study", capacity: 10, resources: ["Wi-Fi", "Power Outlets"] },
+      {room_id: "ZIMMER 414", name: "Zimmer Hall 414", location: "Zimmer Hall", category: "Study Room", capacity: 8, resources: ["White Board", "TV"] },
+      {room_id: "MANTEI 408", name: "Mantei Center 408", location: "Mantei Center", category: "Conference Room", capacity: 38, resources: ["Projector", "Whiteboard", "Teleconference Equipment"]}, 
+      {room_id: "LANGSAM 502", name: "Langsam Library 502", location: "Langsam Library", category: "Study Room",capacity: 6, resources: []}, 
+      {room_id: "LANGSAM 519", name: "Langsam Library 519", location: "Langsam Library",  category: "Study Room", capacity: 2, resources: []},
+      {room_id: "LANGSAM 413", name: "Langsam Library 413" , location: "Langsam Library", category: "Audio Recording Room", capacity: 1, resources: ["Audio Recording Equipment"]},
+      {room_id: "LINDHALL 0027", name: "Lindhall 0027",  location: "Carl H. Lindner Hall", category: "Study Room",capacity: 8, resources: ["TV", "Whiteboard"]},
+      {room_id: "LINDHALL 0040", name: "Lindhall 0040", location: "Carl H. Lindner Hall", category: "Classroom", capacity: 42, resources: ["Echo 360 Equipment", "Projector"]},
+      {room_id: "BALDWIN 548", name: "Baldwin Hall 548",  location: "Baldwin Hall", category: "Computer Instrument Lab", capacity: 24, resources: ["Classroom Technology"]}
     ];
     let currentPage = 1;
   let itemsPerPage = 7;
@@ -82,8 +83,8 @@
     <table>
       <thead>
         <tr>
-          <th>Room Name</th>
-          <th>Status</th>
+          <th>Room ID</th>
+          <th>Name</th>
           <th>Location</th>
           <th>Categories</th>
           <th>Max Capacity</th>
@@ -94,10 +95,8 @@
       <tbody>
         {#each paginatedLocations as location}
           <tr on:click={() => openPopup(location)}>
+            <td>{location.room_id}</td>
             <td>{location.name}</td>
-            <td class="status {location.status === 'Available' ? 'available' : 'unavailable'}">
-              {location.status}
-            </td>
             <td>{location.location}</td>
             <td>{location.category}</td>
             <td>{location.capacity}</td>
@@ -109,7 +108,6 @@
             <td>
               <button
                 on:click={() => openPopup(location)}
-                disabled={location.status !== "Available"}
                 class="reserve-button"
               >
                 Reserve
@@ -130,16 +128,6 @@
       Next
     </button>
   </div>
-
-  <!-- Popup Integration -->
-  <!-- <Popup
-    isVisible={isPopupVisible}
-    message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
-    confirmLabel="Yes"
-    cancelLabel="No"
-    on:confirm={handleConfirm}
-    on:cancel={closePopup}
-  /> -->
   <Popup {showPopup} on:close={closePopup}/>
 
 </div>

@@ -34,7 +34,7 @@
         {#each currentEvents as event, index}
           <li class="event-item">
             <div class="event-content">
-              <strong>{event.location}</strong> 
+              <strong>{event.location}</strong> {event.date}
               <br>{event.name} From {event.startTime} to {event.endTime}
             </div>
             <button class="cancel-button" on:click={() => confirmRemoveEvent(index)}>Cancel</button>
@@ -61,6 +61,7 @@
   }
   .events-list {
     background-color: #fff;
+    border-radius: 8px;
     padding: 20px; /* Padding inside the rectangle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 450px;
