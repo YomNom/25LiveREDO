@@ -7,7 +7,8 @@
       name: '',
       date: '',
       startTime: '',
-      endTime: ''
+      endTime: '', 
+      location: ''
     };
   
     let currentDate = '';

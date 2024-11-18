@@ -7,7 +7,13 @@
 	  import Locations from "./Components/Locations.svelte";
     
     let currentEvents = [
-      
+      {
+        name: 'Sample Event',
+        date: '2023-10-01',
+        startTime: '10:00',
+        endTime: '11:00',
+        location: 'Sample Location'
+      }
     ];
     let  showPopup = false;
     </script>
