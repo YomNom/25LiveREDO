@@ -7,13 +7,27 @@
       name: '',
       date: '',
       startTime: '',
-      endTime: ''
+      endTime: '', 
+      location: ''
     };
   
     let currentDate = '';
     let currentTime = '';
     let errorMessage = '';
-  
+    let show = false;
+    let confirmationMessage = '';
+    let confirm = false;
+
+    function confirmAction() {
+        handleSubmit();
+        show = false;
+    }
+
+    function cancelAction() {
+        confirm = false;
+        show = false;
+    }
+
     onMount(() => {
       const now = new Date();
       currentDate = now.toISOString().split('T')[0];
@@ -30,23 +44,53 @@
       event.endTime = endTime.toTimeString().split(' ')[0].slice(0, 5);
     });
   
-    function handleSubmit() {
+    function confirmEvent() {
       const eventStartDateTime = new Date(`${event.date}T${event.startTime}`);
       const eventEndDateTime = new Date(`${event.date}T${event.endTime}`);
       const now = new Date();
-  
+
+      // Extract hours and periods (AM/PM) from start and end times
+      const [startHours, startMinutes] = event.startTime.split(':');
+      const startPeriod = +startHours >= 12 ? 'PM' : 'AM';
+      const [endHours, endMinutes] = event.endTime.split(':');
+      const endPeriod = +endHours >= 12 ? 'PM' : 'AM';
+
+      const [year, month, day] = event.date.split('-');
+      const formattedDate = `${month}-${day}-${year}`;
+      event.date = formattedDate;
+      event.startTime = formatTime(event.startTime);  
+      event.endTime = formatTime(event.endTime);  
+      console.log("I'm here");
+      
+
       if (eventStartDateTime < now) {
         errorMessage = 'Scheduled start time cannot be before the current time.';
       } else if (eventEndDateTime <= eventStartDateTime) {
         errorMessage = 'End time cannot be before or equal to the start time.';
+      } else if (startPeriod === 'PM' && endPeriod === 'AM') {
+        errorMessage = 'End time cannot be on the next day.';
       } else {
         errorMessage = '';
-        currentEvents = [...currentEvents, { ...event }]; // Update the currentEvents array reactively
-        console.log(currentEvents);
-        resetForm();
+        show = true;
       }
     }
+
+    function handleSubmit() {
+        errorMessage = '';
+        
+        currentEvents = [...currentEvents, { ...event }]; 
+        resetForm();
+
+        console.log(currentEvents);
+    }
   
+    function formatTime(time) {
+      const [hours, minutes] = time.split(':');
+      const period = +hours >= 12 ? 'PM' : 'AM';
+      const formattedHours = +hours % 12 || 12;
+      return `${formattedHours}:${minutes} ${period}`;
+    }
+    
     function resetForm() {
       event.name = '';
       event.date = '';
@@ -62,7 +106,7 @@
   </script>
   
   <div class="rounded-rectangle">
-    <form on:submit|preventDefault={handleSubmit}>
+    <form on:submit|preventDefault={confirmEvent}>
       <h2>Event Scheduling Form</h2>
       <div>
         <label for="eventName">Event Name (Optional)</label>
@@ -89,6 +133,41 @@
     </form>
   </div>
 
+  {#if show}
+    <div class="popup-overlay">
+      <div class="popup">
+        <h2>Please confirm event information:</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td class="confirm-msg">Event Name</td>
+              <td class = "confirm-data">{event.name}</td>
+            </tr>
+            <tr>
+              <td class="confirm-msg">Date</td>
+              <td class = "confirm-data">{event.date}</td>
+            </tr>
+            <tr>
+              <td class="confirm-msg">Start Time</td>
+              <td class = "confirm-data">{event.startTime}</td>
+            </tr>
+            <tr>
+              <td class="confirm-msg">End Time</td>
+              <td class = "confirm-data">{event.endTime}</td>
+            </tr>
+            <tr>
+              <td class="confirm-msg">Location</td>
+              <td class = "confirm-data">{event.location}</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <button on:click={confirmAction}>Confirm</button>
+        <button on:click={cancelAction}>Cancel</button><br>
+      </div>
+    </div>
+  {/if}
+
   <DisplayEvents {currentEvents} title="Current Events" />
 
   <style>
@@ -103,12 +182,16 @@
     h2 {
       margin-top: 0; 
     }
+
     form div {
       margin-bottom: 10px;
     }
     label {
       display: block;
       margin-bottom: 5px;
+    }
+    table {
+      justify-content: center;
     }
     input {
       width: 100%;
@@ -126,12 +209,31 @@
     .time-container > div:last-child {
       margin-right: 0;
     }
+
+    .confirm-msg {
+      padding: 10px 20px;
+      background-color: #777777;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .confirm-data {
+      padding: 10px 20px;
+      background-color: #e7e7e7;
+      color: rgb(0, 0, 0);
+      border: none;
+      width: 225px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
     button {
       padding: 10px 20px;
       background-color: #d91515;
       color: white;
       border: none;
       border-radius: 5px;
+      justify-self: center;
       cursor: pointer;
     }
     button:hover {
@@ -146,4 +248,34 @@
     .error i {
       margin-right: 5px;
     }
+
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  .popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    height: 340px;
+  }
+  .popup button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #d91515;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
   </style>
