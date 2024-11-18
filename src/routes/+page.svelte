@@ -38,7 +38,7 @@
         font-family: 'Host Grotesk', sans-serif;
         font-size: 1rem;
         margin-top: 60px; /* Adjust for navbar height */
-        background-color: rgba(185, 184, 184, 0.552)
+        background-color: #F8F5F2
         ;
         padding-top: 10px;
       }
