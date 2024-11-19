@@ -2,7 +2,8 @@
     import { onMount } from "svelte";
     import DisplayEvents from "./DisplayEvents.svelte";
     export let currentEvents = [];
-    export let selectedRoomId = '';
+    // export let selectedRoomId = '';
+    import {selectedRoomId} from '../store.js';
 
     let event = {
       name: '',
@@ -68,7 +69,7 @@
     }
 
     function confirmEvent() {
-      console.log(selectedRoomId); // for debugging
+      // console.log(selectedRoomId); // for debugging
       
       const eventStartDateTime = new Date(`${event.date}T${event.startTime}`);
       const eventEndDateTime = new Date(`${event.date}T${event.endTime}`);
@@ -88,7 +89,9 @@
       event.endTime = formatTime(event.endTime);  
       console.log("I'm here");
       
-      event.location = selectedRoomId;
+      // $: event.location = $selectedRoomId;
+
+      event.location = $selectedRoomId;
 
       if (eventStartDateTime < now) {
         errorMessage = 'Scheduled start time cannot be before the current time.';

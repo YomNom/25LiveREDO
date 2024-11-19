@@ -1,10 +1,7 @@
 <script lang="ts">
 	import Popup from './Popup.svelte';
-	import { rooms } from '../store';
-	import { writable } from 'svelte/store';
+	import { rooms, availableRooms, selectedRoomId } from '../store';
 	import ResourceTag from './ResourceTag.svelte';
-	import ReservePopup from './ReservePopup.svelte';
-	import { availableRooms } from "../store";
 
 	type Room = {
 		room_id: string;
@@ -45,9 +42,6 @@
 
 	$: totalPages = Math.ceil(filteredLocations.length / itemsPerPage);
 
-	// $: filteredLocations = buildingFilter
-	// ? locations.filter((room) => room.location === buildingFilter)
-	// : locations;
 
 	$: filteredLocations = locations.filter((room) => {
 		const matchesBuilding = buildingFilter ? room.building === buildingFilter : true;
@@ -60,7 +54,13 @@
 
 	let isPopupVisible = false;
 	let selectedLocation: Room | null = null;
-	export let selectedRoomId = '';
+	let selectedRoom = '';
+	
+	$: {
+		if (selectedRoom) {
+			$selectedRoomId = selectedRoom;
+		}
+	}
 	
 	function openPopup(location: Room) {
 		showPopup = true;
@@ -141,7 +141,7 @@
 							  type="radio"
 							  name="room-selection"
 							  value={location.room_id}
-							  bind:group={selectedRoomId}
+							  bind:group={selectedRoom}
 							/>
 						</td>
 					</tr>
@@ -162,14 +162,14 @@
 	{console.log(selectedLocation)}
 
 	<!-- Popup Integration -->
-	<ReservePopup
+	<!-- <ReservePopup
 		isVisible={isPopupVisible}
 		message={`Are you sure you want to reserve "${selectedLocation?.name}"?`}
 		confirmLabel="Yes"
 		cancelLabel="No"
 		on:confirm={handleConfirm}
 		on:cancel={closePopup}
-	/>
+	/> -->
 
 	{console.log(selectedLocation)}
 	<Popup {showPopup} {selectedLocation} on:close={closePopup} />
