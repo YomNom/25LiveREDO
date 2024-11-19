@@ -65,6 +65,7 @@
 	function openPopup(location: Room) {
 		showPopup = true;
 		selectedLocation = location;
+		$selectedRoomId = location.room_id;
 	}
 
 	function reservePopup(location: Room) {
@@ -159,7 +160,7 @@
 			Next
 		</button>
 	</div>
-	{console.log(selectedLocation)}
+	<!-- {console.log(selectedLocation)} -->
 
 	<!-- Popup Integration -->
 	<!-- <ReservePopup
@@ -171,7 +172,7 @@
 		on:cancel={closePopup}
 	/> -->
 
-	{console.log(selectedLocation)}
+	<!-- {console.log(selectedLocation)} -->
 	<Popup {showPopup} {selectedLocation} on:close={closePopup} />
 </div>
 
