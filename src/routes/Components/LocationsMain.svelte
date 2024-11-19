@@ -4,6 +4,7 @@
 	import { writable } from 'svelte/store';
 	import ResourceTag from './ResourceTag.svelte';
 	import ReservePopup from './ReservePopup.svelte';
+	import { availableRooms } from "../store";
 
 	type Room = {
 		room_id: string;
@@ -17,6 +18,17 @@
 	let showPopup = false;
 	// let locations = Object.values(rooms);
 	let locations: Room[] = Object.values(rooms);
+	$: {
+    $availableRooms;
+    if (Object.keys($availableRooms).length) {
+      locations = Object.values($availableRooms);
+      countRooms = Object.keys($availableRooms).length;
+    }
+    else {
+      locations = Object.values(rooms);
+      countRooms = Object.keys(rooms).length;
+    }
+  	}
 	let filteredLocations: Room[] = locations;
 	let buildingOptions = Array.from(new Set(locations.map((room) => room.building)));
 	let buildingFilter = '';
