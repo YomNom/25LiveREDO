@@ -48,7 +48,8 @@
 
 	let isPopupVisible = false;
 	let selectedLocation: Room | null = null;
-
+	export let selectedRoomId = '';
+	
 	function openPopup(location: Room) {
 		showPopup = true;
 		selectedLocation = location;
@@ -124,13 +125,12 @@
 							{/each}
 						</td>
 						<td class="cell">
-							<button
-								on:click={() => reservePopup(location)}
-								disabled={false}
-								class="reserve-button"
-							>
-								Reserve
-							</button>
+							<input
+							  type="radio"
+							  name="room-selection"
+							  value={location.room_id}
+							  bind:group={selectedRoomId}
+							/>
 						</td>
 					</tr>
 				{/each}
