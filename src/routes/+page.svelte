@@ -17,6 +17,8 @@
       }
     ];
     let  showPopup = false;
+    let selectedRoomId = '';
+
     </script>
     
     <main>
@@ -37,10 +39,10 @@
       
       <div class="body-container">
         <div class="top-page">
-          <EventForm {currentEvents} />
+          <EventForm {currentEvents} {selectedRoomId}/>
         </div>
         <div class="table-container">
-          <Locations />
+          <Locations {selectedRoomId}/>
         </div>
       </div>
     </main>
