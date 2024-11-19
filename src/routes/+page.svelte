@@ -22,7 +22,15 @@
       <nav>
         <div class="navbar">
           <img src="/UC-ReadoutLogo.png" alt="UC Readout Logo" class="UClogo" width="105px" height="60px"/>
-          <img src="/home-logo.png" alt="Home Logo" class="home-logo" width="50px" height="50px"/>
+            <div class="menu-container">
+              
+              <img src="/home-icon.png" alt="Home Logo" class="home-logo" width="30px" height="30px"/>
+              <h4>25Live</h4>
+              <div class = "welcome">
+                <h4>Welcome Student!</h4>
+              </div>
+              <img src="/menu-icon.png" alt="Menu Logo" class="menu-logo" width="px" height="35px"/>
+            </div>
         </div>
       </nav>
       
@@ -52,17 +60,39 @@
         width: 100%;
         height: 60px;
         position: fixed;
+        display: flex;
+        justify-content: space-between;
         top: 0;
         left: 0;
         background-color: #d91515;
+      }
+
+      .menu-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 200px;
+        color: #ffffff;
+        background-color: #a30a0a;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 5px;
+        height: 40px;
+        margin-right: 10px;
       }
       .UClogo {
         margin-left: 20px; 
       }
 
-      .home-logo {
-        margin-right: auto;
+      .menu-logo {
+        margin-right: 20px;
       }
+
+      .welcome {
+        padding: 30px;
+      }
+
       .body-container {
         display: flex;
         flex-direction: column;
