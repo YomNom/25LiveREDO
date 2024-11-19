@@ -92,8 +92,9 @@
       // $: event.location = $selectedRoomId;
 
       event.location = $selectedRoomId;
-
-      if (startPeriod === 'PM' && endPeriod === 'AM') {
+      if (event.location === '') {
+        errorMessage = 'Please select a location.';
+      } else if (startPeriod === 'PM' && endPeriod === 'AM') {
         errorMessage = 'End time cannot be on the next day.';
       } else if (eventStartDateTime < now) {
         errorMessage = 'Scheduled start time cannot be before the current time.';
@@ -103,6 +104,7 @@
         errorMessage = '';
         show = true;
       }
+
     }
 
     function handleSubmit() {
@@ -170,6 +172,7 @@
       </div>
       
       <button type="submit">Submit</button>
+
       {#if errorMessage}
         <p class="error"><i class="fas fa-exclamation-circle"></i> {errorMessage}</p>
       {/if}
