@@ -1,5 +1,9 @@
 <script lang="ts">
   import Popup from "./Popup.svelte";
+  import { rooms } from "../store";
+  import { writable } from "svelte/store"; 
+  import ResourceTag from "./ResourceTag.svelte";
+  import ReservePopup from "./ReservePopup.svelte";
 
   type Room = {
     room_id: string;
@@ -11,22 +15,27 @@
   };
 
   let showPopup = false;
-
-  import { rooms } from "../store"; 
-	import ResourceTag from "./ResourceTag.svelte";
-	import ReservePopup from "./ReservePopup.svelte";
-  
-  let locations = Object.values(rooms);
+  // let locations = Object.values(rooms);
+  let locations: Room[] = Object.values(rooms);
+  let filteredLocations: Room[] = locations;
+  let buildingOptions = Array.from(new Set(locations.map(room => room.location)));
+  let buildingFilter = "";
   let countRooms = Object.keys(rooms).length;
 
   let currentPage = 1;
   let itemsPerPage = 6;
   let totalPages = Math.ceil( countRooms / itemsPerPage);
 
-  $: paginatedLocations = locations.slice(
+  $: paginatedLocations = filteredLocations.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
+
+  $: totalPages = Math.ceil(filteredLocations.length / itemsPerPage);
+
+  $: filteredLocations = buildingFilter
+  ? locations.filter((room) => room.location === buildingFilter)
+  : locations;
 
   let isPopupVisible = false;
   let selectedLocation: Room | null = null;
@@ -63,9 +72,21 @@
 </script>
 
 <div class="locations-container">
-  <h2>Your Locations</h2>
-  <p class="location-count">{locations.length} available locations</p>
-
+<h2>Current Availabilities</h2>
+<!-- <p class="location-count">{locations.length} available locations</p> -->
+  <div class="filter-container">
+    <p class="location-count">{filteredLocations.length} available locations</p>
+    <div class="filter">
+      <label for="building-filter">Filter</label>
+      <select id="building-filter" bind:value={buildingFilter}>
+        <option value="">All Buildings</option> <!-- Default option -->
+          {#each buildingOptions as building}
+          <option value={building}>{building}</option>
+          {/each}
+      </select>
+    </div>
+  </div>
+  
   <div class="locations-table-wrapper">
     <table>
       <thead>
