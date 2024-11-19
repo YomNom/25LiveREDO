@@ -22,6 +22,7 @@
       <nav>
         <div class="navbar">
           <img src="/UC-ReadoutLogo.png" alt="UC Readout Logo" class="UClogo" width="105px" height="60px"/>
+          <img src="/home-logo.png" alt="Home Logo" class="home-logo" width="50px" height="50px"/>
         </div>
       </nav>
       
@@ -56,7 +57,11 @@
         background-color: #d91515;
       }
       .UClogo {
-        margin-left: 20px; /* Adjust the value as needed */
+        margin-left: 20px; 
+      }
+
+      .home-logo {
+        margin-right: auto;
       }
       .body-container {
         display: flex;
