@@ -1,7 +1,7 @@
 {
     "room_id": "MANTEI838",
     "name": "Mantei Center 838 - Conference",
-    "location": "Mantei Center",
+    "building": "Mantei Center",
     "category": "Conference Room",
     "capacity": 18,
     "resources": [

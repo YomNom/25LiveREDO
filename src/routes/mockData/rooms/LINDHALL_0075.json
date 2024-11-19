@@ -1,7 +1,7 @@
 {
     "room_id": "LINDHALL0075",
     "name": "Carl H. Lindner Hall 0075 - Group Study",
-    "location": "Lindner Hall (Carl H.)",
+    "building": "Lindner Hall (Carl H.)",
     "category": "Study Room",
     "capacity": 5,
     "resources": [

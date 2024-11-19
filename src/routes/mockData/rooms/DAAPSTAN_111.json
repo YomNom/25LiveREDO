@@ -1,7 +1,7 @@
 {
     "room_id": "DAAPSTAN111",
     "name": "DAAP Studio Annex 111",
-    "location": "DAAP Studio Annex",
+    "building": "DAAP Studio Annex",
     "category": "Design Study Lab",
     "capacity": 2,
     "resources": [
