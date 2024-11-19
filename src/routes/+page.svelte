@@ -4,7 +4,7 @@
     import EventForm from "./Components/EventForm.svelte";
     import DisplayEvents from "./Components/DisplayEvents.svelte";
 	  import Popup from "./Components/Popup.svelte";
-	  import Locations from "./Components/Locations.svelte";
+	  import Locations from "./Components/LocationsMain.svelte";
 	import Location from "./Components/Location.svelte";
     
     let currentEvents = [
@@ -17,21 +17,32 @@
       }
     ];
     let  showPopup = false;
+    let selectedRoomId = '';
+
     </script>
     
     <main>
       <nav>
         <div class="navbar">
           <img src="/UC-ReadoutLogo.png" alt="UC Readout Logo" class="UClogo" width="105px" height="60px"/>
+            <div class="menu-container">
+              
+              <img src="/home-icon.png" alt="Home Logo" class="home-logo" width="30px" height="30px"/>
+              <h4>25Live</h4>
+              <div class = "welcome">
+                <h4>Welcome Student!</h4>
+              </div>
+              <img src="/menu-icon.png" alt="Menu Logo" class="menu-logo" width="px" height="35px"/>
+            </div>
         </div>
       </nav>
       
       <div class="body-container">
         <div class="top-page">
-          <EventForm {currentEvents} />
+          <EventForm {currentEvents} {selectedRoomId}/>
         </div>
         <div class="table-container">
-          <Locations />
+          <Locations {selectedRoomId}/>
         </div>
       </div>
     </main>
@@ -52,13 +63,39 @@
         width: 100%;
         height: 60px;
         position: fixed;
+        display: flex;
+        justify-content: space-between;
         top: 0;
         left: 0;
         background-color: #d91515;
       }
-      .UClogo {
-        margin-left: 20px; /* Adjust the value as needed */
+
+      .menu-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 200px;
+        color: #ffffff;
+        background-color: #a30a0a;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 5px;
+        height: 40px;
+        margin-right: 10px;
       }
+      .UClogo {
+        margin-left: 20px; 
+      }
+
+      .menu-logo {
+        margin-right: 20px;
+      }
+
+      .welcome {
+        padding: 30px;
+      }
+
       .body-container {
         display: flex;
         flex-direction: column;

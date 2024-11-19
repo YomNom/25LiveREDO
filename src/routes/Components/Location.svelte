@@ -54,6 +54,7 @@ let isUnreservePopupVisible = false; // For unreserve confirmation
 let isNotifyPopupVisible = false; // Notify user to unreserve
 let selectedLocation: Location | null = null;
 let reservedLocation: Location | null = null; // Track the reserved location
+export let selectedRoomId: string;
 
 function openPopup(location: Location) {
     if (reservedLocation && reservedLocation !== location) {
@@ -159,18 +160,13 @@ function changePage(newPage: number) {
                             <span class="resource">{resource}</span>
                         {/each}
                     </td>
-                    <td>
-                        {#if reservedLocation === location}
-                            <button on:click={() => openUnreservePopup(location)} class="unreserve-button">Unreserve</button>
-                        {:else}
-                            <button
-                                on:click={() => openPopup(location)}
-                                disabled={location.status !== "Available"}
-                                class="reserve-button"
-                            >
-                                Reserve
-                            </button>
-                        {/if}
+                    <td class="cell">
+                        <input
+                          type="radio"
+                          name="room-selection"
+                          value={location.room_id}
+                          bind:group={selectedRoomId}
+                        />
                     </td>
                 </tr>
             {/each}

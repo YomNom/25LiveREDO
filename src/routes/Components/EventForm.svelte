@@ -2,7 +2,8 @@
     import { onMount } from "svelte";
     import DisplayEvents from "./DisplayEvents.svelte";
     export let currentEvents = [];
-  
+    export let selectedRoomId = '';
+
     let event = {
       name: '',
       date: '',
@@ -67,23 +68,27 @@
     }
 
     function confirmEvent() {
+      console.log(selectedRoomId); // for debugging
+      
       const eventStartDateTime = new Date(`${event.date}T${event.startTime}`);
       const eventEndDateTime = new Date(`${event.date}T${event.endTime}`);
       const now = new Date();
 
-      // Extract hours and periods (AM/PM) from start and end times
+      // Format Time
       const [startHours, startMinutes] = event.startTime.split(':');
       const startPeriod = +startHours >= 12 ? 'PM' : 'AM';
       const [endHours, endMinutes] = event.endTime.split(':');
       const endPeriod = +endHours >= 12 ? 'PM' : 'AM';
 
+      // Format Date
       const [year, month, day] = event.date.split('-');
       const formattedDate = `${month}-${day}-${year}`;
       event.date = formattedDate;
       event.startTime = formatTime(event.startTime);  
       event.endTime = formatTime(event.endTime);  
-      // console.log("I'm here");
+      console.log("I'm here");
       
+      event.location = selectedRoomId;
 
       if (eventStartDateTime < now) {
         errorMessage = 'Scheduled start time cannot be before the current time.';
