@@ -65,15 +65,13 @@
       event.startTime = formatTime(event.startTime);  
       event.endTime = formatTime(event.endTime);  
 
-      
       event.location = selectedRoomId;
-
-      if (eventStartDateTime < now) {
+      if (startPeriod === 'PM' && endPeriod === 'AM') {
+        errorMessage = 'End time cannot be on the next day.';
+      } else if (eventStartDateTime < now) {
         errorMessage = 'Scheduled start time cannot be before the current time.';
       } else if (eventEndDateTime <= eventStartDateTime) {
         errorMessage = 'End time cannot be before or equal to the start time.';
-      } else if (startPeriod === 'PM' && endPeriod === 'AM') {
-        errorMessage = 'End time cannot be on the next day.';
       } else {
         errorMessage = '';
         show = true;
