@@ -3,399 +3,202 @@
         {
             "id": 1,
             "date": "2024-11-18",
-            "times": 
-                {
-                    "09:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    }, 
-                    "10:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "11:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "12:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "13:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "14:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "15:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "16:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "17:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "18:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "19:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "20:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "21:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "22:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    },
-                    "23:00": {
-                        "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                        "reserved":[]
-                    }
-                } 
+
+            "09:00": ["60WCHARL220","ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "10:00": ["60WCHARL220","60WCHARL140", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "11:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+            
+            "12:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "13:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "14:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "15:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "16:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "17:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "18:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "19:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "20:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "21:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
+                
         },
         {
             "id": 2,
             "date": "2024-11-19",
-            "times": {
-                "09:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }, 
-                "10:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "11:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "12:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "13:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "14:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "15:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "16:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "17:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "18:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "19:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "20:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "21:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "22:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "23:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }
-            }
+            "09:00": ["60WCHARL220","ARTSCI255", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "10:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "11:00": ["60WCHARL220","60WCHARL140", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+            
+            "12:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "13:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "14:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "15:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "16:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "17:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "18:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "19:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "20:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "21:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
         },
         {
             "id": 3,
             "date": "2024-11-20",
-            "times": {
-                "09:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }, 
-                "10:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "11:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "12:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "13:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "14:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "15:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "16:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "17:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "18:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "19:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "20:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "21:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "22:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "23:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }
-            }
+            "09:00": ["60WCHARL220","ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "10:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "11:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+            
+            "12:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "13:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "14:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "15:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "16:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "17:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "18:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "19:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "20:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "21:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
         },
         {
             "id": 4,
             "date": "2024-11-21",
-            "times": {
-                "09:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }, 
-                "10:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "11:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "12:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "13:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "14:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "15:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "16:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "17:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "18:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "19:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "20:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "21:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "22:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "23:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }
-            }
+            "09:00": ["60WCHARL220","ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "10:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "11:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+            
+            "12:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "13:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "14:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "15:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "16:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "17:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "18:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "19:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "20:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "21:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
         },
         {
             "id": 5,
             "date": "2024-11-22",
-            "times": {
-                "09:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }, 
-                "10:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "11:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "12:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "13:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "14:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "15:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "16:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "17:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "18:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "19:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "20:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "21:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "22:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "23:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }
-            }
+            "09:00": ["60WCHARL220","ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "10:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "11:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+            
+            "12:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "13:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "14:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "15:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "16:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "17:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "18:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "19:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "20:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "21:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
         },
         {
             "id": 6,
             "date": "2024-11-23",
-            "times": {
-                "09:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }, 
-                "10:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "11:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "12:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "13:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "14:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "15:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "16:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "17:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "18:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "19:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "20:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "21:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "22:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                },
-                "23:00": {
-                    "free":["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
-                    "reserved":[]
-                }
-            }
+            "09:00": ["60WCHARL220","ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "10:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "11:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+            
+            "12:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+
+            "13:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "14:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "15:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "16:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "17:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "18:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "19:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "20:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "21:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
+                
+            "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
         }
     ]
 }

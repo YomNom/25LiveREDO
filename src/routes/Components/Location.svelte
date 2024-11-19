@@ -1,6 +1,6 @@
 <script lang="ts">
     import Popup from "./Popup.svelte";
-    import InfoPopup from "./InfoPopup.svelte";
+    // import InfoPopup from "./InfoPopup.svelte";
     import UnreservePopup from "./UnreservePopup.svelte";
 
     type Location = {
@@ -217,7 +217,7 @@ function changePage(newPage: number) {
 />
 
 <!-- Room Info Popup -->
-{#if isInfoPopupVisible && selectedLocation}
+<!-- {#if isInfoPopupVisible && selectedLocation}
     <InfoPopup
         isVisible={isInfoPopupVisible}
         location={selectedLocation}
@@ -226,7 +226,7 @@ function changePage(newPage: number) {
         on:confirm={reservedLocation === selectedLocation ? handleInfoPopupUnreserve : handleConfirm}
         on:cancel={closePopup}
     />
-{/if}
+{/if} -->
 </div>
 <style>
 .locations-container {

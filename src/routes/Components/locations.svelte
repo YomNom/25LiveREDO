@@ -15,9 +15,34 @@
   import { rooms } from "../store"; 
 	import ResourceTag from "./ResourceTag.svelte";
 	import ReservePopup from "./ReservePopup.svelte";
+
+  import { availableRooms } from "../store";
   
   let locations = Object.values(rooms);
   let countRooms = Object.keys(rooms).length;
+  // $: if (availableRooms) {
+  //   locations = Object.values(availableRooms);
+  //   countRooms = Object.keys(availableRooms).length;
+  // }
+  // $: availableRooms.subscribe(value => {
+  //   if (value) {
+  //     locations = Object.values(value);
+  //     countRooms = Object.keys(value).length;
+  //     console.log(locations, countRooms);
+  //   }
+  // });
+
+  $: {
+    $availableRooms;
+    if (Object.keys($availableRooms).length) {
+      locations = Object.values($availableRooms);
+      countRooms = Object.keys($availableRooms).length;
+    }
+    else {
+      locations = Object.values(rooms);
+      countRooms = Object.keys(rooms).length;
+    }
+  }
 
   let currentPage = 1;
   let itemsPerPage = 6;

@@ -28,6 +28,11 @@
         show = false;
     }
 
+    // these variables are used to store the current event start and end times just for the purpose of updating the eventTime store
+    let curEventStartTime = '';
+    let curEventEndTime = '';
+    let curDate = '';
+
     onMount(() => {
       const now = new Date();
       currentDate = now.toISOString().split('T')[0];
@@ -43,7 +48,24 @@
       endTime.setHours(endTime.getHours() + 1);
       event.endTime = endTime.toTimeString().split(' ')[0].slice(0, 5);
     });
-  
+
+    import { eventTimeChange } from '../store.js';
+    // eventTimeChange.subscribe(value => {
+    //   console.log('Event time changed:', value);
+    // });
+    // Update eventtime store with event start and end time
+    function updateEventTime() {
+      eventTimeChange.set({
+      date: curDate,
+      startTime: curEventStartTime,
+      endTime: curEventEndTime
+      });
+    }
+
+    $: if ((curEventEndTime && curEventStartTime) || curDate) {
+      updateEventTime();
+    }
+
     function confirmEvent() {
       const eventStartDateTime = new Date(`${event.date}T${event.startTime}`);
       const eventEndDateTime = new Date(`${event.date}T${event.endTime}`);
@@ -60,7 +82,7 @@
       event.date = formattedDate;
       event.startTime = formatTime(event.startTime);  
       event.endTime = formatTime(event.endTime);  
-      console.log("I'm here");
+      // console.log("I'm here");
       
 
       if (eventStartDateTime < now) {
@@ -81,7 +103,7 @@
         currentEvents = [...currentEvents, { ...event }]; 
         resetForm();
 
-        console.log(currentEvents);
+        // console.log(currentEvents);
     }
   
     function formatTime(time) {
@@ -103,6 +125,18 @@
       endTime.setHours(endTime.getHours() + 1);
       event.endTime = endTime.toTimeString().split(' ')[0].slice(0, 5);
     }
+
+    function handleStartTimeChange() {
+      curEventStartTime = event.startTime;
+    }
+
+    function handleEndTimeChange() {
+      curEventEndTime = event.endTime;
+    } 
+
+    function handleDateChange() {
+      curDate = event.date;
+    }
   </script>
   
   <div class="rounded-rectangle">
@@ -114,16 +148,16 @@
       </div>
       <div>
         <label for="eventDate">Date</label>
-        <input type="date" id="eventDate" bind:value={event.date} required />
+        <input type="date" id="eventDate" bind:value={event.date} on:change={handleDateChange} required />
       </div>
       <div class="time-container">
         <div>
           <label for="startTime">Start Time:</label>
-          <input type="time" id="startTime" bind:value={event.startTime} required />
+          <input type="time" id="startTime" bind:value={event.startTime} on:change={handleStartTimeChange} required />
         </div>
         <div>
           <label for="endTime">End Time:</label>
-          <input type="time" id="endTime" bind:value={event.endTime} required />
+          <input type="time" id="endTime" bind:value={event.endTime} on:change={handleEndTimeChange} required />
         </div>
       </div>
       <button type="submit">Submit</button>

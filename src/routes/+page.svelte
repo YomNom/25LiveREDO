@@ -5,6 +5,7 @@
     import DisplayEvents from "./Components/DisplayEvents.svelte";
 	  import Popup from "./Components/Popup.svelte";
 	  import Locations from "./Components/Locations.svelte";
+	import Location from "./Components/Location.svelte";
     
     let currentEvents = [
       {
