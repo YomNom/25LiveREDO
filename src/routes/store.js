@@ -12,12 +12,9 @@ import zimmer414 from "./mockData/rooms/ZIMMER_414.json";
 import roomAvailability from "./mockData/availabilities.json";
 import { writable } from "svelte/store";
 
-export const availability = writable(roomAvailability);
-// Convert roomAvailability object to an array
 const roomAvailabilityArray = roomAvailability["availabilities"];
-
-// console.log('rooms',roomAvailabilityArray);
-
+export const availability = writable(roomAvailability);
+export const selectedRoomId = writable('');
 export const availableRooms = writable([]);
 
 export const rooms = {
@@ -109,8 +106,6 @@ function timeFilteredData (startTime, endTime, date) {
     // console.log('Free Room list', freeRoom);
     return filteredData, freeRoom;
 }
-
-
 
 
 
