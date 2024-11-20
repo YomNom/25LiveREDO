@@ -1,4 +1,4 @@
-# 25LiveREDO
+# 25LiveREDO https://25-live-redo.vercel.app/
 This is a Svelte+Vite project that redesigns the user interface for the 25Live scheduling system (https://25live.collegenet.com/pro/uc#!/home/dash) for the University of Cincinnati. This system is used by multiple colleges/universities and other organizations to schedule one-day events, such as classes and student hosted events. (To know more -> https://knowledge25.knowledgeowl.com/help/about-25live) A more pinpoint description is that this system is made only to schedule events and request resources for events, such as a projector. You wouldn't visit this website to sign up for an event. The redesign was made with students in mind and focuses on easibility of reserving a location. We surveyed and interviewed a small pool of people from the University of Cincinnati and some outside to account for in our decisionmaking.
 
 ## Data Unsecure
