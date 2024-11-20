@@ -90,3 +90,6 @@ Currently, the platform allows guest access to event and location data, which co
 
 3. Enhanced Resource Management
 To further improve functionality, future development could introduce advanced resource allocation features. Users could request additional resources like projectors, whiteboards, or specific seating arrangements when reserving a room, with the platform providing smart recommendations based on availability.
+
+4. Pathfinder Visualization
+We also would like to introduce a way for the user to find the path to their reserved rooms. However, due to limitations and time constraints, this map has been omitted from the current website. But the codes and components are already presented for us to easily implement it. 
