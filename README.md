@@ -30,7 +30,7 @@ Any scheduled event will show up in the Current Events Component as their own co
 https://github.com/user-attachments/assets/40c4413b-fa73-4b2c-8b3e-5f5084d09ba3
 
 ## Other forms
-A more complicated form was labeled as an event wizard and was accessible in a link at the top right. We didn't include this - not just because we wanted to focus on the main page - because it looked geared for formal or big events. Among the students we interviewed, most just used it for study rooms or for an activity. This form asked for sponsors, comments, and included the option to attach documents. You could also put in a number for post and pre-days. If we did decide to implement this form, we would've just let the user just make a reservation over a time period.
+A more complicated form was labeled as an event wizard and was accessible in a link at the top right. We didn't include this - not just because we wanted to focus on the main page - because it looked geared for formal or big events. Among the students we interviewed, most just used it for study rooms or for an activity. This form asked for sponsors, comments, and included the option to attach documents. You could also put in a number for posts and pre-days. If we did decide to implement this form, we would've just let the user just make a reservation over a time period.
 
 The components in this image are two of the "forms" and were cutoff for the redundancy of it. The top one is basically another version of the express scheduling but asks for the number of attendees and has additional filters in the dropdown for the available rooms, which is hard to see and work with in a dropdown. This also brings the question of why would you need the number of attendees.
 
@@ -44,21 +44,21 @@ There is a lot of searching involved in the functionality of it which had filter
 
 ![Screenshot 2024-11-19 164833](https://github.com/user-attachments/assets/b9a64272-eac3-4be6-9a8d-ba7cbbc8e8b3)
 
-Thus, we removed the starred searches and quicksearch components, especially events and organizations. Even resources is unnecessary because from what we found, they're equipment that's already located in the room and could be looked up when searching up a location. There's a lot of options in the search filters that confused people and many people avoid using it. Searching events is especially unnecessary considering people do not need to sign up for events. We couldn't find anyone who used these features either.
+Thus, we removed the starred searches and quick search components, especially events and organizations. Even resources is unnecessary because from what we found, they're equipment that's already located in the room and could be looked up when searching up a location. There are many options in the search filters that confuse people and many people avoid using it. Searching for events is especially unnecessary considering people do not need to sign up for events. We couldn't find anyone who used these features either.
 
 This led us to pushing the search and displaying the list of available rooms into one component. But for all the scattered and redundant features of the website, the most promising feature of the website is how immediate it is for the available rooms to show up when filling in the wanted time or/and date. From the start, we strongly wanted to be able demonstrate that in our redesign, and we did. 
 
 ### Functionality
 
  Part 1 -- Current Availabilities section 
-          For The current Availabilities section, the main purpose of this section is to clearly list out all available locations to reserve to the user, the section includes a filter that allows the user to filter by building's name and catagories. each row of the locations shows clearly the location, purpose. the top left of the section will show how many locations available accordings to what filter the user applies.
+          For The current Availabilities section, the main purpose of this section is to clearly list out all available locations to reserve to the user, the section includes a filter that allows the user to filter by building's name and categories. each row of the locations shows clearly the location, purpose. the top left of the section will show how many locations available accordings to what filter the user applies.
         <img width="1435" alt="Screen Shot 2024-11-19 at 4 26 14 PM" src="https://github.com/user-attachments/assets/a959d356-5f30-45ff-a494-bf67226a4d92">
         <img width="1374" alt="Screen Shot 2024-11-19 at 4 29 41 PM" src="https://github.com/user-attachments/assets/4d5bfc19-58f0-4871-9518-e3f5e90788c8">
 
-        resources and max capacity of the respective room. Each room name is made to be clickable, once the user clicks on the name of a room, a popup will show all the details of the selected room, including a timeslot of when the room is available through a calender.
+        resources and max capacity of the respective room. Each room name is made to be clickable, once the user clicks on the name of a room, a popup will show all the details of the selected room, including a timeslot of when the room is available through a calendar.
         
         <img width="730" alt="Screen Shot 2024-11-19 at 4 31 18 PM" src="https://github.com/user-attachments/assets/0873f19d-6ad4-4cde-8e2b-f1c300f32236">
-       A Directions tab is also provided immediately below the calender, providing the user with the precise location of the room, allowing for better Navigation.
+       A Directions tab is also provided immediately below the calendar, providing the user with the precise location of the room, allowing for better Navigation.
         <img width="711" alt="Screen Shot 2024-11-19 at 4 31 53 PM" src="https://github.com/user-attachments/assets/a38cde65-5e63-45fd-aa3f-13e454e43727">
         
 ## Room Information Popup
@@ -76,3 +76,13 @@ Vercel: provides a seamless platform for deploying our web applications.
 ## Website Demo
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/s06DvMxUOyk/0.jpg)](https://www.youtube.com/watch?v=s06DvMxUOyk)
+
+## Future Considerations
+1. Event Management and Collaboration Features
+While the current redesign focuses on room reservations, future iterations could incorporate features to support event management. This includes tools for collaborating with participants, attaching documents to reservations, and syncing with external calendars like Google Calendar or Outlook. Multi-user planning tools could also be added to streamline group coordination for events.
+
+2. Secure Access with University Authentication
+Currently, the platform allows guest access to event and location data, which could be a potential security risk. Future updates will aim to integrate university Single Sign-On (SSO) systems, ensuring secure and authorized access.
+
+3. Enhanced Resource Management
+To further improve functionality, future development could introduce advanced resource allocation features. Users could request additional resources like projectors, whiteboards, or specific seating arrangements when reserving a room, with the platform providing smart recommendations based on availability.
