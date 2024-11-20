@@ -1,12 +1,12 @@
 # 25LiveREDO https://25-live-redo.vercel.app/
 This is a Svelte+Vite project that redesigns the user interface for the 25Live scheduling system (https://25live.collegenet.com/pro/uc#!/home/dash) for the University of Cincinnati. This system is used by multiple colleges/universities and other organizations to schedule one-day events, such as classes and student hosted events. (To know more -> https://knowledge25.knowledgeowl.com/help/about-25live) A more pinpoint description is that this system is made only to schedule events and request resources for events, such as a projector. You wouldn't visit this website to sign up for an event. The redesign was made with students in mind and focuses on easibility of reserving a location. We surveyed and interviewed a small pool of people from the University of Cincinnati and some outside to account for in our decisionmaking.
 
-## Data Unsecure
-The website does not ask for your log in upon visiting the site and gives a guest user access to all events and location information hosted by the organization, which shouldn't be accessible by a guest user. However, it is not accessible for a logged-in user. Other colleges/universities that use 25Live require login to access the reservation system. The only other 25Live we found that did not was the University of Louisville. Because of that, this project redesign is the layout for a logged-in user shown in the picture below.
+## Data Unsecured
+The website does not ask for your login upon visiting the site and gives a guest user access to all events and location information hosted by the organization, which shouldn't be accessible by a guest user. However, it is not accessible for a logged-in user. Other colleges/universities that use 25Live require login to access the reservation system. The only other 25Live we found that did not was the University of Louisville. Because of that, this project redesign is the layout for a logged-in user shown in the picture below.
 
 ![Screenshot 2024-11-19 181854](https://github.com/user-attachments/assets/7c88d7d9-2368-4448-a7fa-65edc34ef0fe)
 
-# Layout
+## Layout
 On our main view, there are three components: eventform, list of rooms, and a list of the user's current events. The items in the top right are only there to simulate the original. We didn't include tasks because we didn't want to carryover any of 25Live's dreams of being a planner. 
 
 ![Screenshot 2024-11-19 182214](https://github.com/user-attachments/assets/998cfabd-e375-4dd8-9f8a-ba97ee441268)
@@ -24,15 +24,15 @@ We decided to make the name optional because it was only viewable by the user fo
 
 To look for a room, available rooms would immediately populate in the search component below it when a time slot was entered. Only after selecting a room, a popup will show asking you to verify the information for the reservation.
 
-### Current Events
+## Current Events
 Any scheduled event will show up in the Current Events Component as their own component and any more events will be stacked below it. To the right of an event component is a cancel button, which will give you a popup asking for confirmation before deleting. There's no cancel event option on the original website.
 
 https://github.com/user-attachments/assets/40c4413b-fa73-4b2c-8b3e-5f5084d09ba3
 
-### Other forms
-A more complicated form was labeled as an event wizard and was accessible in a link at the top right. We didn't include this - not just because we wanted to focus on the main page - because it looked geared for formal or big events. Among the students we interviewed, most just used it for study rooms or for an activity. This form asked for sponsors, comments, and included the option to attach documents. You could also put in a number for post and pre days. If we did decide to implement this form, we would've just let the user just make a reservation over a time period.
+## Other forms
+A more complicated form was labeled as an event wizard and was accessible in a link at the top right. We didn't include this - not just because we wanted to focus on the main page - because it looked geared for formal or big events. Among the students we interviewed, most just used it for study rooms or for an activity. This form asked for sponsors, comments, and included the option to attach documents. You could also put in a number for post and pre-days. If we did decide to implement this form, we would've just let the user just make a reservation over a time period.
 
-The component in this image are two of the "forms" and was cutoff for the redundancy of it. The top one is basically another version of the express scheduling but asks for the number of attendees and has additional filters in the dropdown for the available rooms, which is hard to see and work with in a dropdown. This also brings the question of why would you need the number of attendees.
+The components in this image are two of the "forms" and were cutoff for the redundancy of it. The top one is basically another version of the express scheduling but asks for the number of attendees and has additional filters in the dropdown for the available rooms, which is hard to see and work with in a dropdown. This also brings the question of why would you need the number of attendees.
 
 ![Screenshot 2024-11-19 173721](https://github.com/user-attachments/assets/51ace641-6393-4e76-a34d-0a32529d2fa3)
 
@@ -61,6 +61,10 @@ This led us to pushing the search and displaying the list of available rooms int
        A Directions tab is also provided immediately below the calender, providing the user with the precise location of the room, allowing for better Navigation.
         <img width="711" alt="Screen Shot 2024-11-19 at 4 31 53 PM" src="https://github.com/user-attachments/assets/a38cde65-5e63-45fd-aa3f-13e454e43727">
         
-# Room Information Popup
+## Room Information Popup
 
-# Libraries
+## Libraries
+
+## Website Demo
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/s06DvMxUOyk/0.jpg)](https://www.youtube.com/watch?v=s06DvMxUOyk)
