@@ -53,17 +53,19 @@ Thus, we removed the starred searches and quick search components, especially ev
 This led us to push the search and displaying the list of available rooms into one component. But for all the scattered and redundant features of the website, the most promising feature of the website is how immediate it is for the available rooms to show up when filling in the wanted time or/and date. From the start, we strongly wanted to be able demonstrate that in our redesign, and we did. 
 
 ### Functionality
+## Current Availabilities section 
+The Current Availabilities section, the main purpose of this section is to clearly list out all available locations to reserve to the user, the section includes a filter that allows the user to filter by building's name and categories. Each row of the locations shows clearly the location, and purposes. The top left of the section will show how many locations are available according to what filter the user applies.
+<img width="1435" alt="Screen Shot 2024-11-19 at 4 26 14 PM" src="https://github.com/user-attachments/assets/a959d356-5f30-45ff-a494-bf67226a4d92">
 
- Part 1 -- Current Availabilities section 
-          For The current Availabilities section, the main purpose of this section is to clearly list out all available locations to reserve to the user, the section includes a filter that allows the user to filter by building's name and categories. each row of the locations shows clearly the location, purpose. the top left of the section will show how many locations available accordings to what filter the user applies.
-        <img width="1435" alt="Screen Shot 2024-11-19 at 4 26 14 PM" src="https://github.com/user-attachments/assets/a959d356-5f30-45ff-a494-bf67226a4d92">
-        <img width="1374" alt="Screen Shot 2024-11-19 at 4 29 41 PM" src="https://github.com/user-attachments/assets/4d5bfc19-58f0-4871-9518-e3f5e90788c8">
+<img width="1374" alt="Screen Shot 2024-11-19 at 4 29 41 PM" src="https://github.com/user-attachments/assets/4d5bfc19-58f0-4871-9518-e3f5e90788c8">
 
-        resources and max capacity of the respective room. Each room name is made to be clickable, once the user clicks on the name of a room, a popup will show all the details of the selected room, including a timeslot of when the room is available through a calendar.
+Each room name is made to be clickable, once the user clicks on the name of a room, a popup will show all the details of the selected room, including a timeslot of when the room is available through a calendar.
         
-        <img width="730" alt="Screen Shot 2024-11-19 at 4 31 18 PM" src="https://github.com/user-attachments/assets/0873f19d-6ad4-4cde-8e2b-f1c300f32236">
-       A Directions tab is also provided immediately below the calendar, providing the user with the precise location of the room, allowing for better Navigation.
-        <img width="711" alt="Screen Shot 2024-11-19 at 4 31 53 PM" src="https://github.com/user-attachments/assets/a38cde65-5e63-45fd-aa3f-13e454e43727">
+<img width="730" alt="Screen Shot 2024-11-19 at 4 31 18 PM" src="https://github.com/user-attachments/assets/0873f19d-6ad4-4cde-8e2b-f1c300f32236">
+
+A Direction tab is also provided immediately below the calendar, providing the user with the precise location of the room, and allowing for better navigation.
+
+<img width="711" alt="Screen Shot 2024-11-19 at 4 31 53 PM" src="https://github.com/user-attachments/assets/a38cde65-5e63-45fd-aa3f-13e454e43727">
         
 ## Room Information Popup
 
