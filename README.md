@@ -1,13 +1,14 @@
 # 25LiveREDO https://25-live-redo.vercel.app/
 This is a Svelte+Vite project that redesigns the user interface for the 25Live scheduling system (https://25live.collegenet.com/pro/uc#!/home/dash) for the University of Cincinnati. This system is used by multiple colleges/universities and other organizations to schedule one-day events, such as classes and student hosted events. (To know more -> https://knowledge25.knowledgeowl.com/help/about-25live) A more pinpoint description is that this system is made only to schedule events and request resources for events, such as a projector. You wouldn't visit this website to sign up for an event. The redesign was made with students in mind and focuses on easibility of reserving a location. We surveyed and interviewed a small pool of people from the University of Cincinnati and some outside to account for in our decision-making.
 
+# Redesign Research, Data, Planning
 ## Survey Results
 The success of any platform lies in its ability to effectively and efficiently meet user needs. To evaluate how well 25Live College Net at the University of Cincinnati is serving its users, we carried out a feedback survey to identify common challenges, frustrations, and areas needing improvement. This survey focused on students and other users of the platform to understand their usage frequency and select participants for follow-up interviews. These interviews aim to delve deeper into the platform’s usability and gather insights on user-reported experiences.
 
 ![image](https://github.com/user-attachments/assets/c12066cd-c50a-4f56-b465-22b930f896dd)
 
 ## Interview Questions and Results
-### Interview Questions:
+### Interview Questions
 
 1. What has been your overall experience using 25Live College Net? Can you describe any frustrations or annoyances you've encountered?
 2. Are there any specific features of 25Live that you find particularly frustrating or lacking? How do they impact your experience?
@@ -60,14 +61,15 @@ Impact: This inefficiency wastes time and causes frustration, especially for use
 Express scheduling is not intuitive, involves clicking or trying out too many "boxes" on the website, and lacks clarity about whether bookings are confirmed.
 Impact: Users often feel unsure about whether they’ve successfully reserved a room, which undermines the purpose of a quick scheduling feature.
 
+# Redesign Implementation
+## Design Sketches
+The initial design and layout of the 25LiveREDO interface were conceptualized using Figma. These sketches provided a blueprint for the user-friendly redesign and guided the development process to ensure a seamless user experience.
+You can view our Figma sketches here: https://www.figma.com/design/TEEp2ZRlAZX6kpkigvbFUI/25Live?node-id=0-1&t=TVDlEgaWrWO6NKoO-1
+
 ## Data Unsecured
 The website does not ask for your login upon visiting the site and gives a guest user access to all events and location information hosted by the organization, which shouldn't be accessible by a guest user. However, it is not accessible for a logged-in user. Other colleges/universities that use 25Live require login to access the reservation system. The only other 25Live we found that did not was the University of Louisville. Because of that, this project redesign is the layout for a logged-in user shown in the picture below.
 
 ![Screenshot 2024-11-19 181854](https://github.com/user-attachments/assets/7c88d7d9-2368-4448-a7fa-65edc34ef0fe)
-
-## Design Sketches
-The initial design and layout of the 25LiveREDO interface were conceptualized using Figma. These sketches provided a blueprint for the user-friendly redesign and guided the development process to ensure a seamless user experience.
-You can view our Figma sketches here: https://www.figma.com/design/TEEp2ZRlAZX6kpkigvbFUI/25Live?node-id=0-1&t=TVDlEgaWrWO6NKoO-1
 
 ## Layout
 On our main view, there are three components: eventform, list of rooms, and a list of the user's current events. The items in the top right are only there to simulate the original. We didn't include tasks because we didn't want to carryover any of 25Live's dreams of being a planner. 
@@ -101,7 +103,7 @@ The components in this image are two of the "forms" and were cutoff for the redu
 
 The bottom option is hard to call a form when it's just a searchbar to look up a location name. 
 
-## List of Rooms
+## List of Rooms Availabilities
 ### Searching Issue
 There is a lot of searching involved in the functionality of it which had filters for things people didn't really know about, especially when just trying to reserve one of the many study roooms. A big issue is there's no information displayed by default when searching which makes it difficult when you're not familiar with the rooms. Search components outside of location were not necessary because there is not any utility to them.
 
