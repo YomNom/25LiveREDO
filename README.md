@@ -131,11 +131,23 @@ Impact: Users often feel unsure about whether they’ve successfully reserved a 
 3. **Room Locations**:
    - Display room locations clearly on a map with building identifiers and directions.
 
-
-# Redesign Implementation
 ## Design Sketches
 The initial design and layout of the 25LiveREDO interface were conceptualized using Figma. These sketches provided a blueprint for the user-friendly redesign and guided the development process to ensure a seamless user experience.
 You can view our Figma sketches here: https://www.figma.com/design/TEEp2ZRlAZX6kpkigvbFUI/25Live?node-id=0-1&t=TVDlEgaWrWO6NKoO-1
+
+## Design Feedbacks
+
+### **Student Feedback 1: Huy Le, a Senior**
+The new design is so much easier to use, especially with the express scheduling. I like how less cluttered you make it and also since it only has two boards that either filter by time or by locations I find it to be much quicker. 
+
+### **Student Feedback 2: Alice Lieu, a Senior**
+The redesign is a big improvement, and the interface feels much cleaner now. The express scheduling process is more straightforward, and the popup with room details, especially the map, is a great addition. However, the calendar not updating in real-time can still cause confusion, so syncing availability instantly would make a huge difference.
+
+### **Student Feedback 3: Desmond, a Senior**
+I think it is much cleaner and I would definitely use it more often whenever I want to book a room since it is much more intuitive compared to the old website.
+
+# Redesign Implementation
+
 
 ## Data Unsecured
 The website does not ask for your login upon visiting the site and gives a guest user access to all events and location information hosted by the organization, which shouldn't be accessible by a guest user. However, it is not accessible for a logged-in user. Other colleges/universities that use 25Live require login to access the reservation system. The only other 25Live we found that did not was the University of Louisville. Because of that, this project redesign is the layout for a logged-in user shown in the picture below.
