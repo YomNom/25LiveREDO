@@ -6,6 +6,59 @@ The success of any platform lies in its ability to effectively and efficiently m
 
 ![image](https://github.com/user-attachments/assets/c12066cd-c50a-4f56-b465-22b930f896dd)
 
+## Interview Questions and Results
+### Interview Questions:
+
+1. What has been your overall experience using 25Live College Net? Can you describe any frustrations or annoyances you've encountered?
+2. Are there any specific features of 25Live that you find particularly frustrating or lacking? How do they impact your experience?
+3. We will show the user the web page from our laptop. What do you focus on when first opening the page?
+4. We are trying to redesign the main functionality of the website which is express scheduling. What is your experience regarding the usage of such functionality? 
+5. How easy or difficult is it for you to navigate the platform and use the express scheduling for a room functionality?
+
+### Answers summary
+1. 
+- It works, but it’s not user-friendly. I often get stuck trying to find what I need.
+- It’s okay, but the website feels all over the place and it will take me more than 10 minutes to find what I want. 
+- I get frustrated with how many steps it takes just to make a simple room reservation.
+
+2.
+- There are too many options to pick a room, from scheduling an event to finding the time, finding the room, and many more.
+- There is no confirmation whatsoever if I have successfully picked a room.
+- Whenever I need to pick a room, or a time, it seems like they are in separate places and I have to read a manual to know how to do it.
+
+3.
+- I look for a clear way to see available rooms and time slots right away.
+- I focus on whether the layout is easy to understand or if it feels cluttered.
+- The first thing I notice is how the menu and navigation are organized.
+  
+4.
+- It’s not very intuitive. I usually second-guess if I’ve done it correctly.
+- The process works, but it feels slow and involves too many unnecessary steps.
+- I like the idea of express scheduling, but I’ve had issues with confirming my bookings.
+
+5.
+- It’s a bit difficult to navigate; I often feel like I’m guessing my way through it.
+- Finding the express scheduling option takes too many clicks, which is annoying.
+- It’s manageable, but the interface could be simpler and more straightforward.
+
+### Findings 
+From the sample responses, our team has identified several recurring themes and insights about user experiences with 25Live College Net. Our team has also managed to capture the user's initial focus on the website by also asking them what they immediately focus on when we show them the 25 Live CollegeNet website. These findings can guide improvements to the platform:
+
+1. General Usability Issues
+The platform is perceived as outdated, with a cluttered interface and poor user experience.
+Impact: Users feel frustrated and discouraged when trying to perform simple tasks, such as finding rooms or completing reservations.
+
+2. Navigation Challenges
+Navigating the website is not intuitive due to the layout of the webpage, all of the functionality although presented, is not explained, and users often feel uncertain and intimidated about where to find specific features like express scheduling.
+Impact: The lack of intuitive navigation leads to inefficiency and user dissatisfaction, particularly when users are in a hurry.
+
+3. Ineffective Search and Filtering
+The search feature lacks detailed filters (e.g., by room size, equipment, or specific needs), forcing users to work their way through irrelevant and redundant results that can be better explained.
+Impact: This inefficiency wastes time and causes frustration, especially for users with specific requirements.
+
+4. Express Scheduling Limitations
+Express scheduling is not intuitive, involves clicking or trying out too many "boxes" on the website, and lacks clarity about whether bookings are confirmed.
+Impact: Users often feel unsure about whether they’ve successfully reserved a room, which undermines the purpose of a quick scheduling feature.
 
 ## Data Unsecured
 The website does not ask for your login upon visiting the site and gives a guest user access to all events and location information hosted by the organization, which shouldn't be accessible by a guest user. However, it is not accessible for a logged-in user. Other colleges/universities that use 25Live require login to access the reservation system. The only other 25Live we found that did not was the University of Louisville. Because of that, this project redesign is the layout for a logged-in user shown in the picture below.
