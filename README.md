@@ -6,6 +6,10 @@ The website does not ask for your login upon visiting the site and gives a guest
 
 ![Screenshot 2024-11-19 181854](https://github.com/user-attachments/assets/7c88d7d9-2368-4448-a7fa-65edc34ef0fe)
 
+## Design Sketches
+The initial design and layout of the 25LiveREDO interface were conceptualized using Figma. These sketches provided a blueprint for the user-friendly redesign and guided the development process to ensure a seamless user experience.
+You can view our Figma sketches here: https://www.figma.com/design/TEEp2ZRlAZX6kpkigvbFUI/25Live?node-id=0-1&t=TVDlEgaWrWO6NKoO-1
+
 ## Layout
 On our main view, there are three components: eventform, list of rooms, and a list of the user's current events. The items in the top right are only there to simulate the original. We didn't include tasks because we didn't want to carryover any of 25Live's dreams of being a planner. 
 
