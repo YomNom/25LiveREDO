@@ -110,3 +110,49 @@ function timeFilteredData (startTime, endTime, date) {
 
 
 
+// Function to filter and organize data
+function filterRoomAvailability(data, room) {
+    const result = {
+        room: room,
+        weeks: []
+    };
+
+    // Group data by weeks
+    let week = [];
+    for (const day of data) {
+        const filteredDay = {
+            date: day.date,
+            times: []
+        };
+
+        // Filter time slots for the specified room
+        for (const [time, rooms] of Object.entries(day)) {
+            if (time !== 'id' && time !== 'date' && rooms.includes(room)) {
+                filteredDay.times.push(time);
+            }
+        }
+
+        if (filteredDay.times.length > 0) {
+            week.push(filteredDay);
+        }
+
+        // Group into weeks (7 days per week)
+        if (week.length === 7) {
+            result.weeks.push(week);
+            week = [];
+        }
+    }
+
+    // Add the remaining days to the last week
+    if (week.length > 0) {
+        result.weeks.push(week);
+    }
+
+    return result;
+}
+
+
+const roomIds = Object.values(rooms).map(room => room.room_id);
+export const filteredAvailability = roomIds.map(roomId => filterRoomAvailability(roomAvailabilityArray, roomId));
+// console.log(filteredAvailability);
+

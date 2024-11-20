@@ -1,6 +1,164 @@
 {
     "availabilities":[
         {
+            "id": 24,
+            "date": "2024-11-17",
+            "09:00": [
+                "ZIMMER414",
+                "TEACHERS340",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27"
+            ],
+            "10:00": [
+                "ZIMMER414",
+                "60WCHARL220",
+                "ARTSCI27",
+                "MANTEI838",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL140",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111"
+            ],
+            "11:00": [
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "ARTSCI255",
+                "60WCHARL220",
+                "ARTSCI27",
+                "TEACHERS340",
+                "MANTEI838"
+            ],
+            "12:00": [
+                "TEACHERS340",
+                "60WCHARL220",
+                "60WCHARL140",
+                "ARTSCI255",
+                "LINDHALL0075",
+                "MANTEI838"
+            ],
+            "13:00": [
+                "60WCHARL140",
+                "ARTSCI27",
+                "TEACHERS340",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "LINDHALL0075"
+            ],
+            "14:00": [
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "ARTSCI27"
+            ],
+            "15:00": [
+                "LINDHALL0075",
+                "ARTSCI27",
+                "BAFLORY145",
+                "MANTEI838",
+                "ZIMMER414",
+                "CLIFTCT1109"
+            ],
+            "16:00": [
+                "ARTSCI27",
+                "60WCHARL140",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "60WCHARL220"
+            ],
+            "17:00": [
+                "ZIMMER414",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "MANTEI838"
+            ],
+            "18:00": [
+                "LINDHALL0075",
+                "ZIMMER414",
+                "60WCHARL140",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI27",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "CLIFTCT1109"
+            ],
+            "19:00": [
+                "LINDHALL0075",
+                "MANTEI838",
+                "ARTSCI27",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ZIMMER414",
+                "ARTSCI255",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "20:00": [
+                "TEACHERS340",
+                "ARTSCI27",
+                "MANTEI838",
+                "60WCHARL220",
+                "ZIMMER414",
+                "BAFLORY145",
+                "60WCHARL140",
+                "CLIFTCT1109"
+            ],
+            "21:00": [
+                "60WCHARL140",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "60WCHARL220"
+            ],
+            "22:00": [
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "ARTSCI27",
+                "ARTSCI255",
+                "ZIMMER414",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "TEACHERS340"
+            ],
+            "23:00": [
+                "ARTSCI255",
+                "60WCHARL140",
+                "ZIMMER414",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI27",
+                "DAAPSTAN111"
+            ]
+        },
+        {
             "id": 1,
             "date": "2024-11-18",
 
@@ -199,6 +357,2281 @@
             "22:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"],
                 
             "23:00": ["60WCHARL220","60WCHARL140", "ARTSCI255", "DAAPSTAN111", "TEACHERS340", "ZIMMER414","ARTSCI27", "BAFLORY145","CLIFTCT1109", "LINDHALL0075", "MANTEI838"]
+        },
+        {
+            "id": 7,
+            "date": "2024-11-24",
+            "09:00": [
+                "ARTSCI27",
+                "TEACHERS340",
+                "MANTEI838",
+                "BAFLORY145",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "60WCHARL140"
+            ],
+            "10:00": [
+                "ZIMMER414",
+                "MANTEI838",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "TEACHERS340",
+                "CLIFTCT1109"
+            ],
+            "11:00": [
+                "LINDHALL0075",
+                "ZIMMER414",
+                "ARTSCI255",
+                "60WCHARL220",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "TEACHERS340"
+            ],
+            "12:00": [
+                "LINDHALL0075",
+                "ARTSCI255",
+                "BAFLORY145",
+                "60WCHARL140",
+                "60WCHARL220",
+                "TEACHERS340"
+            ],
+            "13:00": [
+                "MANTEI838",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "ZIMMER414",
+                "CLIFTCT1109"
+            ],
+            "14:00": [
+                "BAFLORY145",
+                "ARTSCI27",
+                "ZIMMER414",
+                "MANTEI838",
+                "60WCHARL220",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111"
+            ],
+            "15:00": [
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "ARTSCI27",
+                "TEACHERS340",
+                "60WCHARL220",
+                "ARTSCI255",
+                "60WCHARL140"
+            ],
+            "16:00": [
+                "MANTEI838",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "ARTSCI27",
+                "BAFLORY145",
+                "DAAPSTAN111"
+            ],
+            "17:00": [
+                "60WCHARL220",
+                "MANTEI838",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "TEACHERS340",
+                "ARTSCI255"
+            ],
+            "18:00": [
+                "ZIMMER414",
+                "MANTEI838",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "60WCHARL220",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "LINDHALL0075"
+            ],
+            "19:00": [
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "MANTEI838",
+                "60WCHARL140",
+                "ARTSCI27"
+            ],
+            "20:00": [
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "BAFLORY145"
+            ],
+            "21:00": [
+                "60WCHARL220",
+                "TEACHERS340",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "BAFLORY145"
+            ],
+            "22:00": [
+                "ARTSCI27",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "BAFLORY145",
+                "MANTEI838",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "23:00": [
+                "MANTEI838",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "BAFLORY145",
+                "ARTSCI255",
+                "60WCHARL220",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "ZIMMER414"
+            ]
+        },
+        {
+            "id": 8,
+            "date": "2024-11-25",
+            "09:00": [
+                "MANTEI838",
+                "60WCHARL140",
+                "ARTSCI255",
+                "ZIMMER414",
+                "ARTSCI27",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "CLIFTCT1109"
+            ],
+            "10:00": [
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI27",
+                "TEACHERS340",
+                "60WCHARL140",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "CLIFTCT1109"
+            ],
+            "11:00": [
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "BAFLORY145",
+                "ZIMMER414",
+                "60WCHARL140",
+                "ARTSCI27",
+                "MANTEI838",
+                "LINDHALL0075"
+            ],
+            "12:00": [
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI255",
+                "60WCHARL140",
+                "TEACHERS340",
+                "LINDHALL0075"
+            ],
+            "13:00": [
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL140"
+            ],
+            "14:00": [
+                "ZIMMER414",
+                "60WCHARL140",
+                "TEACHERS340",
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "CLIFTCT1109"
+            ],
+            "15:00": [
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "MANTEI838",
+                "BAFLORY145",
+                "ZIMMER414",
+                "ARTSCI255",
+                "ARTSCI27",
+                "60WCHARL140",
+                "60WCHARL220",
+                "LINDHALL0075"
+            ],
+            "16:00": [
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "MANTEI838",
+                "ARTSCI27",
+                "ZIMMER414",
+                "DAAPSTAN111"
+            ],
+            "17:00": [
+                "MANTEI838",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "60WCHARL140",
+                "BAFLORY145",
+                "TEACHERS340"
+            ],
+            "18:00": [
+                "ARTSCI255",
+                "60WCHARL140",
+                "MANTEI838",
+                "ARTSCI27",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "DAAPSTAN111"
+            ],
+            "19:00": [
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "MANTEI838",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "60WCHARL140"
+            ],
+            "20:00": [
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "MANTEI838",
+                "60WCHARL220",
+                "TEACHERS340",
+                "ZIMMER414"
+            ],
+            "21:00": [
+                "ZIMMER414",
+                "MANTEI838",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "TEACHERS340"
+            ],
+            "22:00": [
+                "MANTEI838",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ZIMMER414",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "ARTSCI255"
+            ],
+            "23:00": [
+                "ZIMMER414",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "ARTSCI255",
+                "60WCHARL220",
+                "MANTEI838"
+            ]
+        },
+        {
+            "id": 9,
+            "date": "2024-11-26",
+            "09:00": [
+                "ARTSCI255",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340"
+            ],
+            "10:00": [
+                "BAFLORY145",
+                "ARTSCI255",
+                "MANTEI838",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "TEACHERS340",
+                "ZIMMER414",
+                "CLIFTCT1109"
+            ],
+            "11:00": [
+                "MANTEI838",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "ARTSCI255",
+                "60WCHARL140"
+            ],
+            "12:00": [
+                "LINDHALL0075",
+                "ARTSCI27",
+                "ARTSCI255",
+                "ZIMMER414",
+                "BAFLORY145",
+                "MANTEI838"
+            ],
+            "13:00": [
+                "ARTSCI27",
+                "60WCHARL220",
+                "ZIMMER414",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "BAFLORY145",
+                "TEACHERS340",
+                "60WCHARL140",
+                "LINDHALL0075"
+            ],
+            "14:00": [
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "ARTSCI27",
+                "BAFLORY145"
+            ],
+            "15:00": [
+                "BAFLORY145",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "TEACHERS340",
+                "ZIMMER414",
+                "MANTEI838",
+                "ARTSCI255"
+            ],
+            "16:00": [
+                "BAFLORY145",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "ZIMMER414",
+                "60WCHARL220",
+                "MANTEI838"
+            ],
+            "17:00": [
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "BAFLORY145",
+                "ARTSCI255",
+                "TEACHERS340",
+                "MANTEI838",
+                "ZIMMER414"
+            ],
+            "18:00": [
+                "LINDHALL0075",
+                "TEACHERS340",
+                "60WCHARL140",
+                "BAFLORY145",
+                "ARTSCI27",
+                "60WCHARL220"
+            ],
+            "19:00": [
+                "60WCHARL220",
+                "ARTSCI27",
+                "60WCHARL140",
+                "MANTEI838",
+                "ZIMMER414",
+                "TEACHERS340"
+            ],
+            "20:00": [
+                "ARTSCI255",
+                "ZIMMER414",
+                "BAFLORY145",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "TEACHERS340"
+            ],
+            "21:00": [
+                "MANTEI838",
+                "TEACHERS340",
+                "BAFLORY145",
+                "60WCHARL220",
+                "60WCHARL140",
+                "ZIMMER414"
+            ],
+            "22:00": [
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ZIMMER414",
+                "60WCHARL140",
+                "BAFLORY145",
+                "60WCHARL220",
+                "ARTSCI27",
+                "MANTEI838"
+            ],
+            "23:00": [
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL140",
+                "ARTSCI27",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "60WCHARL220",
+                "ARTSCI255",
+                "ZIMMER414"
+            ]
+        },
+        {
+            "id": 10,
+            "date": "2024-11-27",
+            "09:00": [
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "MANTEI838",
+                "TEACHERS340",
+                "60WCHARL220"
+            ],
+            "10:00": [
+                "ARTSCI255",
+                "BAFLORY145",
+                "MANTEI838",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "ARTSCI27"
+            ],
+            "11:00": [
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "ZIMMER414",
+                "ARTSCI27",
+                "LINDHALL0075",
+                "60WCHARL140"
+            ],
+            "12:00": [
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "ZIMMER414",
+                "60WCHARL220",
+                "ARTSCI27",
+                "TEACHERS340"
+            ],
+            "13:00": [
+                "60WCHARL220",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "MANTEI838",
+                "BAFLORY145",
+                "60WCHARL140",
+                "ZIMMER414",
+                "TEACHERS340"
+            ],
+            "14:00": [
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "ZIMMER414",
+                "BAFLORY145",
+                "TEACHERS340",
+                "ARTSCI27"
+            ],
+            "15:00": [
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ARTSCI27",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "ZIMMER414",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "ARTSCI255"
+            ],
+            "16:00": [
+                "60WCHARL220",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL140",
+                "TEACHERS340",
+                "ARTSCI27",
+                "ZIMMER414"
+            ],
+            "17:00": [
+                "MANTEI838",
+                "60WCHARL220",
+                "60WCHARL140",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ARTSCI27",
+                "BAFLORY145"
+            ],
+            "18:00": [
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "60WCHARL220",
+                "ZIMMER414",
+                "60WCHARL140",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "BAFLORY145"
+            ],
+            "19:00": [
+                "BAFLORY145",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "MANTEI838",
+                "TEACHERS340",
+                "60WCHARL220",
+                "ARTSCI27",
+                "ARTSCI255",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "CLIFTCT1109"
+            ],
+            "20:00": [
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "60WCHARL220",
+                "MANTEI838",
+                "TEACHERS340",
+                "60WCHARL140",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "BAFLORY145"
+            ],
+            "21:00": [
+                "BAFLORY145",
+                "ARTSCI27",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "ZIMMER414",
+                "60WCHARL140",
+                "TEACHERS340"
+            ],
+            "22:00": [
+                "ARTSCI255",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "60WCHARL140"
+            ],
+            "23:00": [
+                "BAFLORY145",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "MANTEI838"
+            ]
+        },
+        {
+            "id": 11,
+            "date": "2024-11-28",
+            "09:00": [
+                "ARTSCI27",
+                "60WCHARL140",
+                "ZIMMER414",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "TEACHERS340",
+                "60WCHARL220",
+                "LINDHALL0075"
+            ],
+            "10:00": [
+                "ZIMMER414",
+                "60WCHARL220",
+                "BAFLORY145",
+                "60WCHARL140",
+                "ARTSCI255",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "DAAPSTAN111"
+            ],
+            "11:00": [
+                "MANTEI838",
+                "ZIMMER414",
+                "60WCHARL220",
+                "ARTSCI255",
+                "BAFLORY145",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ARTSCI27"
+            ],
+            "12:00": [
+                "ZIMMER414",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "ARTSCI27",
+                "ARTSCI255"
+            ],
+            "13:00": [
+                "ARTSCI255",
+                "ZIMMER414",
+                "ARTSCI27",
+                "60WCHARL220",
+                "BAFLORY145",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "MANTEI838"
+            ],
+            "14:00": [
+                "ARTSCI27",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "60WCHARL140",
+                "MANTEI838",
+                "60WCHARL220"
+            ],
+            "15:00": [
+                "MANTEI838",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "ARTSCI255",
+                "60WCHARL140",
+                "TEACHERS340",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "ARTSCI27"
+            ],
+            "16:00": [
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "60WCHARL140",
+                "60WCHARL220",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "ARTSCI27"
+            ],
+            "17:00": [
+                "TEACHERS340",
+                "60WCHARL140",
+                "ARTSCI255",
+                "ARTSCI27",
+                "60WCHARL220",
+                "MANTEI838"
+            ],
+            "18:00": [
+                "LINDHALL0075",
+                "60WCHARL140",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "TEACHERS340",
+                "ARTSCI27",
+                "MANTEI838"
+            ],
+            "19:00": [
+                "LINDHALL0075",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "BAFLORY145",
+                "MANTEI838",
+                "TEACHERS340",
+                "ZIMMER414"
+            ],
+            "20:00": [
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "MANTEI838",
+                "BAFLORY145",
+                "TEACHERS340",
+                "ZIMMER414",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "ARTSCI255"
+            ],
+            "21:00": [
+                "ZIMMER414",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "TEACHERS340",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "ARTSCI255"
+            ],
+            "22:00": [
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "MANTEI838",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "TEACHERS340",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "23:00": [
+                "TEACHERS340",
+                "BAFLORY145",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "ZIMMER414",
+                "LINDHALL0075"
+            ]
+        },
+        {
+            "id": 12,
+            "date": "2024-11-29",
+            "09:00": [
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI27"
+            ],
+            "10:00": [
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ARTSCI255",
+                "ARTSCI27",
+                "BAFLORY145",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "ZIMMER414"
+            ],
+            "11:00": [
+                "ARTSCI255",
+                "60WCHARL220",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "60WCHARL140",
+                "TEACHERS340",
+                "CLIFTCT1109"
+            ],
+            "12:00": [
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "ZIMMER414",
+                "TEACHERS340",
+                "MANTEI838",
+                "ARTSCI27",
+                "ARTSCI255"
+            ],
+            "13:00": [
+                "60WCHARL140",
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI255",
+                "TEACHERS340",
+                "BAFLORY145",
+                "ARTSCI27",
+                "60WCHARL220",
+                "DAAPSTAN111"
+            ],
+            "14:00": [
+                "ARTSCI27",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "MANTEI838",
+                "60WCHARL220",
+                "60WCHARL140",
+                "TEACHERS340"
+            ],
+            "15:00": [
+                "ARTSCI27",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "ZIMMER414",
+                "ARTSCI255",
+                "LINDHALL0075"
+            ],
+            "16:00": [
+                "ARTSCI255",
+                "ARTSCI27",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "60WCHARL140",
+                "BAFLORY145",
+                "60WCHARL220"
+            ],
+            "17:00": [
+                "ARTSCI255",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "MANTEI838"
+            ],
+            "18:00": [
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "TEACHERS340",
+                "ZIMMER414",
+                "LINDHALL0075"
+            ],
+            "19:00": [
+                "LINDHALL0075",
+                "60WCHARL220",
+                "60WCHARL140",
+                "ZIMMER414",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "MANTEI838"
+            ],
+            "20:00": [
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL140",
+                "60WCHARL220"
+            ],
+            "21:00": [
+                "MANTEI838",
+                "ARTSCI27",
+                "60WCHARL140",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "60WCHARL220"
+            ],
+            "22:00": [
+                "60WCHARL220",
+                "60WCHARL140",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "TEACHERS340",
+                "BAFLORY145",
+                "ARTSCI255",
+                "LINDHALL0075"
+            ],
+            "23:00": [
+                "60WCHARL140",
+                "60WCHARL220",
+                "ZIMMER414",
+                "TEACHERS340",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ARTSCI255"
+            ]
+        },
+        {
+            "id": 13,
+            "date": "2024-11-30",
+            "09:00": [
+                "BAFLORY145",
+                "ARTSCI27",
+                "TEACHERS340",
+                "MANTEI838",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "ARTSCI255"
+            ],
+            "10:00": [
+                "ARTSCI27",
+                "MANTEI838",
+                "BAFLORY145",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "60WCHARL220"
+            ],
+            "11:00": [
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "60WCHARL220",
+                "BAFLORY145",
+                "MANTEI838",
+                "TEACHERS340",
+                "ZIMMER414",
+                "60WCHARL140"
+            ],
+            "12:00": [
+                "MANTEI838",
+                "ZIMMER414",
+                "60WCHARL220",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "60WCHARL140"
+            ],
+            "13:00": [
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ARTSCI27",
+                "ZIMMER414"
+            ],
+            "14:00": [
+                "ZIMMER414",
+                "TEACHERS340",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "BAFLORY145",
+                "60WCHARL220",
+                "ARTSCI255",
+                "60WCHARL140"
+            ],
+            "15:00": [
+                "60WCHARL220",
+                "TEACHERS340",
+                "60WCHARL140",
+                "MANTEI838",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "ARTSCI255"
+            ],
+            "16:00": [
+                "60WCHARL140",
+                "ARTSCI27",
+                "BAFLORY145",
+                "ZIMMER414",
+                "60WCHARL220",
+                "TEACHERS340",
+                "MANTEI838",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "DAAPSTAN111"
+            ],
+            "17:00": [
+                "ZIMMER414",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "ARTSCI255"
+            ],
+            "18:00": [
+                "ARTSCI27",
+                "60WCHARL140",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "TEACHERS340",
+                "ARTSCI255"
+            ],
+            "19:00": [
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "ZIMMER414",
+                "60WCHARL140"
+            ],
+            "20:00": [
+                "TEACHERS340",
+                "ARTSCI27",
+                "MANTEI838",
+                "ZIMMER414",
+                "BAFLORY145",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "60WCHARL140"
+            ],
+            "21:00": [
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "TEACHERS340"
+            ],
+            "22:00": [
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI255"
+            ],
+            "23:00": [
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "ARTSCI27",
+                "MANTEI838",
+                "60WCHARL220"
+            ]
+        },
+        {
+            "id": 14,
+            "date": "2024-12-01",
+            "09:00": [
+                "TEACHERS340",
+                "MANTEI838",
+                "ZIMMER414",
+                "60WCHARL140",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "DAAPSTAN111"
+            ],
+            "10:00": [
+                "60WCHARL220",
+                "60WCHARL140",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "MANTEI838",
+                "DAAPSTAN111"
+            ],
+            "11:00": [
+                "60WCHARL220",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ARTSCI27",
+                "MANTEI838",
+                "BAFLORY145"
+            ],
+            "12:00": [
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI255",
+                "ARTSCI27",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "DAAPSTAN111"
+            ],
+            "13:00": [
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "ZIMMER414",
+                "MANTEI838",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "14:00": [
+                "LINDHALL0075",
+                "ZIMMER414",
+                "ARTSCI27",
+                "MANTEI838",
+                "ARTSCI255",
+                "TEACHERS340"
+            ],
+            "15:00": [
+                "MANTEI838",
+                "BAFLORY145",
+                "ARTSCI255",
+                "ZIMMER414",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "TEACHERS340"
+            ],
+            "16:00": [
+                "ARTSCI27",
+                "MANTEI838",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "60WCHARL140",
+                "60WCHARL220",
+                "ARTSCI255"
+            ],
+            "17:00": [
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "60WCHARL140"
+            ],
+            "18:00": [
+                "ARTSCI27",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "TEACHERS340",
+                "MANTEI838",
+                "ARTSCI255"
+            ],
+            "19:00": [
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "ARTSCI27",
+                "MANTEI838",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "BAFLORY145",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "ZIMMER414"
+            ],
+            "20:00": [
+                "LINDHALL0075",
+                "60WCHARL140",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "MANTEI838",
+                "BAFLORY145",
+                "TEACHERS340",
+                "ARTSCI27"
+            ],
+            "21:00": [
+                "BAFLORY145",
+                "ARTSCI255",
+                "TEACHERS340",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "60WCHARL140",
+                "LINDHALL0075",
+                "ZIMMER414"
+            ],
+            "22:00": [
+                "60WCHARL140",
+                "TEACHERS340",
+                "60WCHARL220",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "BAFLORY145"
+            ],
+            "23:00": [
+                "LINDHALL0075",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "MANTEI838"
+            ]
+        },
+        {
+            "id": 15,
+            "date": "2024-12-02",
+            "09:00": [
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "60WCHARL140",
+                "ARTSCI27",
+                "60WCHARL220",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "ARTSCI255"
+            ],
+            "10:00": [
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "MANTEI838",
+                "TEACHERS340",
+                "ZIMMER414",
+                "60WCHARL140",
+                "ARTSCI27",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "CLIFTCT1109"
+            ],
+            "11:00": [
+                "TEACHERS340",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI27",
+                "60WCHARL140"
+            ],
+            "12:00": [
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "60WCHARL140",
+                "MANTEI838",
+                "BAFLORY145",
+                "ZIMMER414",
+                "60WCHARL220",
+                "LINDHALL0075"
+            ],
+            "13:00": [
+                "LINDHALL0075",
+                "ARTSCI27",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "BAFLORY145"
+            ],
+            "14:00": [
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "TEACHERS340"
+            ],
+            "15:00": [
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "TEACHERS340",
+                "BAFLORY145"
+            ],
+            "16:00": [
+                "60WCHARL140",
+                "ARTSCI27",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "MANTEI838",
+                "BAFLORY145"
+            ],
+            "17:00": [
+                "BAFLORY145",
+                "ZIMMER414",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "MANTEI838",
+                "LINDHALL0075",
+                "60WCHARL220"
+            ],
+            "18:00": [
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "BAFLORY145",
+                "TEACHERS340",
+                "LINDHALL0075"
+            ],
+            "19:00": [
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "MANTEI838",
+                "ZIMMER414",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "ARTSCI27",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "20:00": [
+                "60WCHARL140",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "ARTSCI27",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "TEACHERS340"
+            ],
+            "21:00": [
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "MANTEI838",
+                "60WCHARL220",
+                "BAFLORY145",
+                "ZIMMER414"
+            ],
+            "22:00": [
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "ARTSCI27",
+                "60WCHARL140",
+                "ZIMMER414",
+                "MANTEI838",
+                "TEACHERS340"
+            ],
+            "23:00": [
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ARTSCI255",
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI27",
+                "60WCHARL220"
+            ]
+        },
+        {
+            "id": 16,
+            "date": "2024-12-03",
+            "09:00": [
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "ZIMMER414",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI255",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "60WCHARL220"
+            ],
+            "10:00": [
+                "ZIMMER414",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "CLIFTCT1109"
+            ],
+            "11:00": [
+                "60WCHARL220",
+                "ARTSCI27",
+                "60WCHARL140",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "LINDHALL0075"
+            ],
+            "12:00": [
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "ARTSCI27"
+            ],
+            "13:00": [
+                "60WCHARL220",
+                "ARTSCI27",
+                "60WCHARL140",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "TEACHERS340",
+                "BAFLORY145",
+                "ARTSCI255",
+                "MANTEI838"
+            ],
+            "14:00": [
+                "60WCHARL140",
+                "TEACHERS340",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "LINDHALL0075"
+            ],
+            "15:00": [
+                "BAFLORY145",
+                "ARTSCI27",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "60WCHARL140"
+            ],
+            "16:00": [
+                "BAFLORY145",
+                "ARTSCI255",
+                "MANTEI838",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "ZIMMER414"
+            ],
+            "17:00": [
+                "ARTSCI255",
+                "BAFLORY145",
+                "60WCHARL140",
+                "60WCHARL220",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340"
+            ],
+            "18:00": [
+                "ARTSCI27",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "TEACHERS340",
+                "ARTSCI255"
+            ],
+            "19:00": [
+                "ZIMMER414",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI255",
+                "60WCHARL140",
+                "BAFLORY145",
+                "ARTSCI27"
+            ],
+            "20:00": [
+                "MANTEI838",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "60WCHARL140"
+            ],
+            "21:00": [
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "BAFLORY145",
+                "60WCHARL220",
+                "ARTSCI255",
+                "ARTSCI27",
+                "LINDHALL0075",
+                "ZIMMER414"
+            ],
+            "22:00": [
+                "BAFLORY145",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ARTSCI255",
+                "60WCHARL140"
+            ],
+            "23:00": [
+                "MANTEI838",
+                "ARTSCI255",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ZIMMER414",
+                "BAFLORY145",
+                "ARTSCI27",
+                "60WCHARL220"
+            ]
+        },
+        {
+            "id": 17,
+            "date": "2024-12-04",
+            "09:00": [
+                "60WCHARL220",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "ARTSCI255",
+                "ARTSCI27",
+                "MANTEI838"
+            ],
+            "10:00": [
+                "60WCHARL140",
+                "60WCHARL220",
+                "ARTSCI27",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "TEACHERS340"
+            ],
+            "11:00": [
+                "60WCHARL140",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "ARTSCI27",
+                "60WCHARL220"
+            ],
+            "12:00": [
+                "ARTSCI255",
+                "60WCHARL140",
+                "60WCHARL220",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "MANTEI838",
+                "DAAPSTAN111"
+            ],
+            "13:00": [
+                "ARTSCI255",
+                "MANTEI838",
+                "ARTSCI27",
+                "TEACHERS340",
+                "60WCHARL140",
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "CLIFTCT1109"
+            ],
+            "14:00": [
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "60WCHARL220",
+                "MANTEI838",
+                "TEACHERS340",
+                "ARTSCI255",
+                "60WCHARL140",
+                "ARTSCI27"
+            ],
+            "15:00": [
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ARTSCI27",
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL140"
+            ],
+            "16:00": [
+                "60WCHARL140",
+                "TEACHERS340",
+                "60WCHARL220",
+                "ARTSCI255",
+                "ARTSCI27",
+                "MANTEI838",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "DAAPSTAN111"
+            ],
+            "17:00": [
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "ZIMMER414",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "60WCHARL140",
+                "ARTSCI255",
+                "ARTSCI27",
+                "MANTEI838"
+            ],
+            "18:00": [
+                "LINDHALL0075",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "BAFLORY145",
+                "MANTEI838",
+                "ARTSCI27"
+            ],
+            "19:00": [
+                "ZIMMER414",
+                "BAFLORY145",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI27",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "TEACHERS340"
+            ],
+            "20:00": [
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "ARTSCI27",
+                "MANTEI838",
+                "ZIMMER414",
+                "ARTSCI255",
+                "LINDHALL0075"
+            ],
+            "21:00": [
+                "60WCHARL140",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "ZIMMER414",
+                "TEACHERS340",
+                "ARTSCI255",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "MANTEI838"
+            ],
+            "22:00": [
+                "CLIFTCT1109",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "ZIMMER414",
+                "ARTSCI27",
+                "ARTSCI255"
+            ],
+            "23:00": [
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "60WCHARL220",
+                "TEACHERS340",
+                "ZIMMER414"
+            ]
+        },
+        {
+            "id": 18,
+            "date": "2024-12-05",
+            "09:00": [
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27",
+                "TEACHERS340",
+                "ARTSCI255",
+                "60WCHARL220",
+                "BAFLORY145",
+                "MANTEI838",
+                "ZIMMER414"
+            ],
+            "10:00": [
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI27",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "DAAPSTAN111"
+            ],
+            "11:00": [
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "60WCHARL140",
+                "60WCHARL220",
+                "BAFLORY145"
+            ],
+            "12:00": [
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "BAFLORY145",
+                "ZIMMER414"
+            ],
+            "13:00": [
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "TEACHERS340",
+                "60WCHARL220"
+            ],
+            "14:00": [
+                "DAAPSTAN111",
+                "MANTEI838",
+                "ARTSCI255",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "ZIMMER414"
+            ],
+            "15:00": [
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "16:00": [
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "ARTSCI27",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "LINDHALL0075"
+            ],
+            "17:00": [
+                "ARTSCI27",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "ARTSCI255",
+                "ZIMMER414"
+            ],
+            "18:00": [
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "ZIMMER414"
+            ],
+            "19:00": [
+                "ARTSCI255",
+                "MANTEI838",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "LINDHALL0075",
+                "ZIMMER414",
+                "BAFLORY145",
+                "TEACHERS340"
+            ],
+            "20:00": [
+                "ARTSCI255",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "ARTSCI27",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "TEACHERS340",
+                "MANTEI838",
+                "ZIMMER414",
+                "CLIFTCT1109"
+            ],
+            "21:00": [
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "60WCHARL220",
+                "BAFLORY145",
+                "TEACHERS340",
+                "LINDHALL0075"
+            ],
+            "22:00": [
+                "60WCHARL140",
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "ARTSCI255",
+                "60WCHARL220",
+                "MANTEI838"
+            ],
+            "23:00": [
+                "CLIFTCT1109",
+                "ZIMMER414",
+                "ARTSCI255",
+                "TEACHERS340",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "MANTEI838",
+                "60WCHARL140",
+                "BAFLORY145",
+                "ARTSCI27"
+            ]
+        },
+        {
+            "id": 19,
+            "date": "2024-12-06",
+            "09:00": [
+                "DAAPSTAN111",
+                "MANTEI838",
+                "TEACHERS340",
+                "ZIMMER414",
+                "ARTSCI255",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "CLIFTCT1109"
+            ],
+            "10:00": [
+                "LINDHALL0075",
+                "ARTSCI27",
+                "60WCHARL140",
+                "MANTEI838",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "60WCHARL220",
+                "CLIFTCT1109",
+                "ZIMMER414"
+            ],
+            "11:00": [
+                "ZIMMER414",
+                "60WCHARL140",
+                "TEACHERS340",
+                "ARTSCI27",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "BAFLORY145",
+                "CLIFTCT1109"
+            ],
+            "12:00": [
+                "TEACHERS340",
+                "DAAPSTAN111",
+                "ZIMMER414",
+                "MANTEI838",
+                "ARTSCI27",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "ARTSCI255",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "13:00": [
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "BAFLORY145",
+                "ARTSCI255",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "ARTSCI27",
+                "ZIMMER414",
+                "LINDHALL0075"
+            ],
+            "14:00": [
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "MANTEI838",
+                "ARTSCI27",
+                "ARTSCI255",
+                "60WCHARL140",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "DAAPSTAN111"
+            ],
+            "15:00": [
+                "BAFLORY145",
+                "ARTSCI255",
+                "TEACHERS340",
+                "60WCHARL220",
+                "DAAPSTAN111",
+                "MANTEI838"
+            ],
+            "16:00": [
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "ARTSCI255",
+                "60WCHARL140",
+                "MANTEI838",
+                "ZIMMER414",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "BAFLORY145"
+            ],
+            "17:00": [
+                "LINDHALL0075",
+                "ARTSCI255",
+                "60WCHARL220",
+                "ARTSCI27",
+                "TEACHERS340",
+                "60WCHARL140",
+                "BAFLORY145"
+            ],
+            "18:00": [
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "ARTSCI27",
+                "DAAPSTAN111",
+                "60WCHARL140"
+            ],
+            "19:00": [
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "60WCHARL220",
+                "60WCHARL140",
+                "TEACHERS340",
+                "BAFLORY145",
+                "ARTSCI27",
+                "ARTSCI255"
+            ],
+            "20:00": [
+                "ZIMMER414",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "TEACHERS340",
+                "60WCHARL220",
+                "ARTSCI27"
+            ],
+            "21:00": [
+                "ARTSCI255",
+                "60WCHARL220",
+                "ARTSCI27",
+                "TEACHERS340",
+                "BAFLORY145",
+                "CLIFTCT1109"
+            ],
+            "22:00": [
+                "ARTSCI255",
+                "60WCHARL220",
+                "60WCHARL140",
+                "TEACHERS340",
+                "ARTSCI27",
+                "BAFLORY145",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "ZIMMER414"
+            ],
+            "23:00": [
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "MANTEI838",
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "60WCHARL140",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "ARTSCI27"
+            ]
+        },
+        {
+            "id": 20,
+            "date": "2024-12-07",
+            "09:00": [
+                "ZIMMER414",
+                "TEACHERS340",
+                "60WCHARL140",
+                "CLIFTCT1109",
+                "DAAPSTAN111",
+                "ARTSCI27"
+            ],
+            "10:00": [
+                "ZIMMER414",
+                "60WCHARL220",
+                "ARTSCI27",
+                "MANTEI838",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL140",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111"
+            ],
+            "11:00": [
+                "ZIMMER414",
+                "DAAPSTAN111",
+                "60WCHARL140",
+                "LINDHALL0075",
+                "CLIFTCT1109",
+                "BAFLORY145",
+                "ARTSCI255",
+                "60WCHARL220",
+                "ARTSCI27",
+                "TEACHERS340",
+                "MANTEI838"
+            ],
+            "12:00": [
+                "TEACHERS340",
+                "60WCHARL220",
+                "60WCHARL140",
+                "ARTSCI255",
+                "LINDHALL0075",
+                "MANTEI838"
+            ],
+            "13:00": [
+                "60WCHARL140",
+                "ARTSCI27",
+                "TEACHERS340",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "LINDHALL0075"
+            ],
+            "14:00": [
+                "ZIMMER414",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "LINDHALL0075",
+                "DAAPSTAN111",
+                "MANTEI838",
+                "ARTSCI27"
+            ],
+            "15:00": [
+                "LINDHALL0075",
+                "ARTSCI27",
+                "BAFLORY145",
+                "MANTEI838",
+                "ZIMMER414",
+                "CLIFTCT1109"
+            ],
+            "16:00": [
+                "ARTSCI27",
+                "60WCHARL140",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "60WCHARL220"
+            ],
+            "17:00": [
+                "ZIMMER414",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "ARTSCI255",
+                "CLIFTCT1109",
+                "ARTSCI27",
+                "MANTEI838"
+            ],
+            "18:00": [
+                "LINDHALL0075",
+                "ZIMMER414",
+                "60WCHARL140",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI27",
+                "TEACHERS340",
+                "ARTSCI255",
+                "DAAPSTAN111",
+                "BAFLORY145",
+                "CLIFTCT1109"
+            ],
+            "19:00": [
+                "LINDHALL0075",
+                "MANTEI838",
+                "ARTSCI27",
+                "BAFLORY145",
+                "DAAPSTAN111",
+                "CLIFTCT1109",
+                "TEACHERS340",
+                "ZIMMER414",
+                "ARTSCI255",
+                "60WCHARL220",
+                "60WCHARL140"
+            ],
+            "20:00": [
+                "TEACHERS340",
+                "ARTSCI27",
+                "MANTEI838",
+                "60WCHARL220",
+                "ZIMMER414",
+                "BAFLORY145",
+                "60WCHARL140",
+                "CLIFTCT1109"
+            ],
+            "21:00": [
+                "60WCHARL140",
+                "BAFLORY145",
+                "CLIFTCT1109",
+                "MANTEI838",
+                "LINDHALL0075",
+                "ARTSCI27",
+                "60WCHARL220"
+            ],
+            "22:00": [
+                "60WCHARL140",
+                "DAAPSTAN111",
+                "60WCHARL220",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "ARTSCI27",
+                "ARTSCI255",
+                "ZIMMER414",
+                "MANTEI838",
+                "CLIFTCT1109",
+                "TEACHERS340"
+            ],
+            "23:00": [
+                "ARTSCI255",
+                "60WCHARL140",
+                "ZIMMER414",
+                "TEACHERS340",
+                "CLIFTCT1109",
+                "LINDHALL0075",
+                "BAFLORY145",
+                "60WCHARL220",
+                "MANTEI838",
+                "ARTSCI27",
+                "DAAPSTAN111"
+            ]
         }
     ]
+    
 }

@@ -7,5 +7,7 @@
     "resources": [
         "TV",
         "Wi-Fi"
-    ]
+    ],
+    "coordinates": [-84.519110, 39.131866]
+
 }

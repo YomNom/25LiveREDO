@@ -41,7 +41,7 @@
                 </div>
                 {/if}
            </div>
-
+           {console.log(selectedLocation.coordinates)}
             <!-- map -->
             <div class="map-dropdown">
                 <button class="dropdown-button" on:click={() => showDropdownMap = !showDropdownMap}>
@@ -50,7 +50,7 @@
                 
                 {#if showDropdownMap}
                     <div class="dropdown-content">
-                        <Roommap /> 
+                        <Roommap {selectedLocation}/> 
                     </div>
                 {/if}
             </div>
