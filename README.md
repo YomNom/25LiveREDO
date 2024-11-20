@@ -16,7 +16,7 @@ The success of any platform lies in its ability to effectively and efficiently m
 4. We are trying to redesign the main functionality of the website which is express scheduling. What is your experience regarding the usage of such functionality? 
 5. How easy or difficult is it for you to navigate the platform and use the express scheduling for a room functionality?
 
-### Answers summary
+### Answers Summary
 1. 
 - It works, but it’s not user-friendly. I often get stuck trying to find what I need.
 - It’s okay, but the website feels all over the place and it will take me more than 10 minutes to find what I want. 
@@ -144,7 +144,7 @@ The new design is so much easier to use, especially with the express scheduling.
 The redesign is a big improvement, and the interface feels much cleaner now. The express scheduling process is more straightforward, and the popup with room details, especially the map, is a great addition. However, the calendar not updating in real-time can still cause confusion, so syncing availability instantly would make a huge difference.
 
 ### **Student Feedback 3: Desmond, a Senior**
-I think it is much cleaner and I would definitely use it more often whenever I want to book a room since it is much more intuitive compared to the old website.
+I think it is much cleaner and I would definitely use it more often whenever I want to book a room since it is much more intuitive compared to the old website. There are plenty of times that I have forgotten that I have booked a room since it does not show the book room anywhere and I have to dig through the calendar on the old website to view it. But with this new confirmation, I think it is much more easier for me to find it now and remind myself. 
 
 # Redesign Implementation
 
@@ -155,11 +155,11 @@ The website does not ask for your login upon visiting the site and gives a guest
 ![Screenshot 2024-11-19 181854](https://github.com/user-attachments/assets/7c88d7d9-2368-4448-a7fa-65edc34ef0fe)
 
 ## Layout
-On our main view, there are three components: eventform, list of rooms, and a list of the user's current events. The items in the top right are only there to simulate the original. We didn't include tasks because we didn't want to carryover any of 25Live's dreams of being a planner. 
+On our main view, there are three components: event form, list of rooms, and a list of the user's current events. The items in the top right are only there to simulate the original. We didn't include tasks because we didn't want to carry over any of 25Live's dreams of being a planner. 
 
 ![Screenshot 2024-11-19 182214](https://github.com/user-attachments/assets/998cfabd-e375-4dd8-9f8a-ba97ee441268)
 
-Things we cutoff completely was reports, event drafts, and tasks. The tasks and reports were features that seemed to want to make 25live act as a pseudo planner, but considering how the website is used only for reservations they felt unnecessary. We also couldn't find anyone who considered those features, which for the most part were self-reports. Event drafts were something we considered unnessary because there didn't seem an important reason to allow the user to do that. The component that shows drafts puts them two sections: one where you are the scheduler and one where you are the requestor. Considering how you can't sign up for events, its a wonder why requester is a category and why they used that instead of participant.
+Things we cutoff completely was reports, event drafts, and tasks. The tasks and reports were features that seemed to want to make 25live act as a pseudo-planner, but considering how the website is used only for reservations they felt unnecessary. We also couldn't find anyone who considered those features, which for the most part were self-reports. Event drafts were something we considered unnessary because there didn't seem an important reason to allow the user to do that. The component that shows drafts puts them two sections: one where you are the scheduler and one where you are the requestor. Considering how you can't sign up for events, its a wonder why requester is a category and why they used that instead of participant.
 
 ## Event Form
 There's a total of four forms that can be used to reserve a room on the original. We based our form primarily on what was called the express scheduling form, which asked for a name for the event, a start time, an end time, and would show the available rooms at that time and/or date in a dropdown menu. It also let you see the duration of the event. We theorize this was displayed for debugging purposes and just left in because there's a time limit you can reserve a room for. Since we couldn't formally view that information and see how it differentiated across different rooms, we did not implement that feature. If we were to continue working on this, we would put more research into the rooms time capacity and implement a time limit.
