@@ -65,6 +65,14 @@ This led us to pushing the search and displaying the list of available rooms int
 
 ## Libraries
 
+Key dependencies include:
+
+Svelte: A front-end framework that compiles components into efficient JavaScript code, improving performance and user experience.
+
+Vite: A build tool and development server offering rapid compilation and hot module replacement, streamlining the development process.
+
+Vercel: provides a seamless platform for deploying our web applications.
+
 ## Website Demo
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/s06DvMxUOyk/0.jpg)](https://www.youtube.com/watch?v=s06DvMxUOyk)
