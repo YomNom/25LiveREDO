@@ -18,7 +18,7 @@ There's a total of four forms that can be used to reserve a room on the original
 
 For error checking: we made sure an event wasn't being made before the current date, that the end time didn't go to the next day, and a location was selected.
 
-<video src='https://github.com/user-attachments/assets/a39ae9e8-754f-4410-8b63-b7af8e773606' width=180/>
+https://github.com/user-attachments/assets/a39ae9e8-754f-4410-8b63-b7af8e773606
 
 We decided to make the name optional because it was only viewable by the user for the most part. We only know one building that has little screens by the door for the study rooms that shows the reservations and it mattered. From our interviews, filling out the name rarely mattered because they didn't often have multiple reservations at a time and didn't look back previous events.
 
@@ -27,7 +27,7 @@ To look for a room, available rooms would immediately populate in the search com
 ### Current Events
 Any scheduled event will show up in the Current Events Component as their own component and any more events will be stacked below it. To the right of an event component is a cancel button, which will give you a popup asking for confirmation before deleting. There's no cancel event option on the original website.
 
-<video src='https://github.com/user-attachments/assets/40c4413b-fa73-4b2c-8b3e-5f5084d09ba3' width=180/>
+https://github.com/user-attachments/assets/40c4413b-fa73-4b2c-8b3e-5f5084d09ba3
 
 ### Other forms
 A more complicated form was labeled as an event wizard and was accessible in a link at the top right. We didn't include this - not just because we wanted to focus on the main page - because it looked geared for formal or big events. Among the students we interviewed, most just used it for study rooms or for an activity. This form asked for sponsors, comments, and included the option to attach documents. You could also put in a number for post and pre days. If we did decide to implement this form, we would've just let the user just make a reservation over a time period.
