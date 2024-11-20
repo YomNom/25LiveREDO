@@ -50,7 +50,7 @@ There is a lot of searching involved in the functionality of it which had filter
 
 Thus, we removed the starred searches and quick search components, especially events and organizations. Even resources is unnecessary because from what we found, they're equipment that's already located in the room and could be looked up when searching up a location. There are many options in the search filters that confuse people and many people avoid using it. Searching for events is especially unnecessary considering people do not need to sign up for events. We couldn't find anyone who used these features either.
 
-This led us to pushing the search and displaying the list of available rooms into one component. But for all the scattered and redundant features of the website, the most promising feature of the website is how immediate it is for the available rooms to show up when filling in the wanted time or/and date. From the start, we strongly wanted to be able demonstrate that in our redesign, and we did. 
+This led us to push the search and displaying the list of available rooms into one component. But for all the scattered and redundant features of the website, the most promising feature of the website is how immediate it is for the available rooms to show up when filling in the wanted time or/and date. From the start, we strongly wanted to be able demonstrate that in our redesign, and we did. 
 
 ### Functionality
 
