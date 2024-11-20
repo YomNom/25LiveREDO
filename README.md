@@ -45,21 +45,92 @@ The success of any platform lies in its ability to effectively and efficiently m
 ### Findings 
 From the sample responses, our team has identified several recurring themes and insights about user experiences with 25Live College Net. Our team has also managed to capture the user's initial focus on the website by also asking them what they immediately focus on when we show them the 25 Live CollegeNet website. These findings can guide improvements to the platform:
 
-1. General Usability Issues
+1. **General Usability Issues**: 
 The platform is perceived as outdated, with a cluttered interface and poor user experience.
 Impact: Users feel frustrated and discouraged when trying to perform simple tasks, such as finding rooms or completing reservations.
 
-2. Navigation Challenges
+2. **Navigation Challenges**: 
 Navigating the website is not intuitive due to the layout of the webpage, all of the functionality although presented, is not explained, and users often feel uncertain and intimidated about where to find specific features like express scheduling.
 Impact: The lack of intuitive navigation leads to inefficiency and user dissatisfaction, particularly when users are in a hurry.
 
-3. Ineffective Search and Filtering
+3. **Ineffective Search and Filtering**: 
 The search feature lacks detailed filters (e.g., by room size, equipment, or specific needs), forcing users to work their way through irrelevant and redundant results that can be better explained.
 Impact: This inefficiency wastes time and causes frustration, especially for users with specific requirements.
 
-4. Express Scheduling Limitations
+4. **Express Scheduling Limitations**: 
 Express scheduling is not intuitive, involves clicking or trying out too many "boxes" on the website, and lacks clarity about whether bookings are confirmed.
 Impact: Users often feel unsure about whether they’ve successfully reserved a room, which undermines the purpose of a quick scheduling feature.
+
+### Focused List of Design Plans for Redesigned Room Scheduling Interface
+#### **Primary Functions**
+1. **Reserving a Study Room**:
+   - Create a user-friendly form to book a study room.
+   - Ensure users can easily input relevant details like date, time, and preferences.
+
+2. **Confirmation of Room Approval**:
+   - Display clear, immediate confirmation messages once a room reservation is approved.
+
+3. **Redesign Express Scheduling (Main Focus)**:
+   - Streamline the process to make it quick and intuitive for users.
+   - Ensure users can reserve a room with minimal steps.
+
+4. **Looking Up Rooms/Time Slots**:
+   - Implement a search feature to browse available rooms and their respective time slots.
+
+5. **Room Identification Across Buildings**:
+   - Add clear identifiers for rooms, such as unique codes or tags for different buildings.
+   
+#### **Core Design Tasks**
+1. **Express Scheduling Form**:
+   - Simplify input fields and reduce unnecessary steps.
+   - Include smart suggestions based on user preferences or past bookings.
+
+2. **Layout**:
+   - Design a clean, responsive layout for both the main page and individual room details.
+
+3. **List of Rooms**:
+   - Display rooms in an organized, easy-to-read list format.
+   - Include sorting and filtering options for better usability.
+
+4. **Filters**:
+   - Add filters for room equipment, room size, and availability by time.
+
+5. **Room Information Popup**:
+   - Design a popup showing detailed information about the selected room, including:
+     - **Room Info**: Name, location, and capacity.
+     - **Time Slots**: Available times for the selected date.
+     - **Map**: Clear visual showing the room’s location within the building.
+     - **Calendar**: Interactive calendar for scheduling.
+
+#### **Coding Tasks**
+1. **Data Management**:
+   - Build a mock data list of rooms in a `store.js` file to share between components.
+
+2. **Navigation**:
+   - Build a navigation bar for easy access to key sections of the platform.
+
+3. **Main Page**:
+   - Design and code the main page to include:
+     - A time-selection form.
+     - A dynamically updated list of available rooms based on the selected time.
+
+4. **Room Choosing Popup**:
+   - Develop the popup component with the following:
+     - **Header**: Room name and quick summary.
+     - **Details**: Room info (location, capacity, equipment).
+     - **Map**: Visual map of the room’s building.
+     - **Calendar**: Interactive calendar to view and select availability.
+
+#### **Side Features**
+1. **Account Views**:
+   - Create different layouts and access levels for various types of users (e.g., students, faculty, staff).
+
+2. **Club Reservations**:
+   - Add a feature specifically for club-based room reservations, allowing bulk bookings or recurring events.
+
+3. **Room Locations**:
+   - Display room locations clearly on a map with building identifiers and directions.
+
 
 # Redesign Implementation
 ## Design Sketches
